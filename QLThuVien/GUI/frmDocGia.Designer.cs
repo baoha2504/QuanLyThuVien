@@ -39,6 +39,7 @@
             this.btnSachDaTra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnThongKe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Sach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTuaSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTacGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNhaXuatBan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -57,7 +58,6 @@
             this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.btnCuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -150,35 +150,47 @@
             this.Sach.Name = "Sach";
             this.Sach.Text = "Sách";
             // 
+            // btnCuonSach
+            // 
+            this.btnCuonSach.Name = "btnCuonSach";
+            this.btnCuonSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnCuonSach.Text = "Cuốn sách";
+            this.btnCuonSach.Click += new System.EventHandler(this.btnCuonSach_Click);
+            // 
             // btnTuaSach
             // 
             this.btnTuaSach.Name = "btnTuaSach";
             this.btnTuaSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTuaSach.Text = "Tựa sách";
+            this.btnTuaSach.Click += new System.EventHandler(this.btnTuaSach_Click);
             // 
             // btnTacGia
             // 
             this.btnTacGia.Name = "btnTacGia";
             this.btnTacGia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTacGia.Text = "Tác giả";
+            this.btnTacGia.Click += new System.EventHandler(this.btnTacGia_Click);
             // 
             // btnNhaXuatBan
             // 
             this.btnNhaXuatBan.Name = "btnNhaXuatBan";
             this.btnNhaXuatBan.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnNhaXuatBan.Text = "Nhà xuất bản";
+            this.btnNhaXuatBan.Click += new System.EventHandler(this.btnNhaXuatBan_Click);
             // 
             // btnKeSach
             // 
             this.btnKeSach.Name = "btnKeSach";
             this.btnKeSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnKeSach.Text = "Kệ sách";
+            this.btnKeSach.Click += new System.EventHandler(this.btnKeSach_Click);
             // 
             // btnViTri
             // 
             this.btnViTri.Name = "btnViTri";
             this.btnViTri.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnViTri.Text = "Vị trí thư viện";
+            this.btnViTri.Click += new System.EventHandler(this.btnViTri_Click);
             // 
             // ThongTinTroGiup
             // 
@@ -304,13 +316,6 @@
             this.barStaticItem5,
             this.barStaticItem6});
             this.fluentFormDefaultManager1.MaxItemId = 6;
-            // 
-            // btnCuonSach
-            // 
-            this.btnCuonSach.Name = "btnCuonSach";
-            this.btnCuonSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnCuonSach.Text = "Cuốn sách";
-            this.btnCuonSach.Click += new System.EventHandler(this.btnCuonSach_Click);
             // 
             // frmDocGia
             // 
