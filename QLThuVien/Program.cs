@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-    
+using DevExpress.LookAndFeel;
+
 namespace QLThuVien
 {
     static class Program
@@ -17,6 +18,9 @@ namespace QLThuVien
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            DevExpress.Skins.SkinManager.EnableFormSkins();
+            DevExpress.UserSkins.BonusSkins.Register();
+            UserLookAndFeel.Default.SetSkinStyle("Money Twins");
             Application.Run(new DangNhap());
         }
     }

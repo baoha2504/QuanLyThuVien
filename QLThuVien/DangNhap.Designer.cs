@@ -89,6 +89,7 @@
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(280, 35);
             this.txt_user.TabIndex = 3;
+            this.txt_user.Text = "TT001";
             // 
             // txt_pass
             // 
@@ -98,6 +99,7 @@
             this.txt_pass.Name = "txt_pass";
             this.txt_pass.Size = new System.Drawing.Size(280, 35);
             this.txt_pass.TabIndex = 4;
+            this.txt_pass.Text = "a";
             // 
             // btn_Log
             // 

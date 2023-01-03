@@ -1,0 +1,19 @@
+QUY ĐỊNH CỦA THƯ VIỆN HVKTQS
+
+I. Quy trình mượn trả sách bao gồm các bước sau:
+1. Người dùng gửi yêu cầu mượn sách: Người dùng có thể gửi yêu cầu mượn sách qua các phương thức như điện thoại, email, hoặc trực tiếp tới thư viện. Yêu cầu này cần bao gồm thông tin về người mượn, cuốn sách mà người dùng muốn mượn và thời hạn mượn.
+2. Xác nhận yêu cầu mượn sách: Sau khi nhận được yêu cầu mượn sách, người quản lý thư viện sẽ kiểm tra xem cuốn sách đó còn trong thư viện hay không và có thể cho mượn hay không. Nếu có thể cho mượn, người quản lý sẽ xác nhận yêu cầu mượn sách và ghi lại thông tin về người mượn và ngày mượn trong hệ thống.
+3. Người dùng nhận sách và thanh toán phí mượn: Sau khi người quản lý thư viện xác nhận yêu cầu mượn sách, người dùng sẽ đến thư viện để nhận sách và thanh toán phí mượn. Phí mượn sách thường được tính theo số ngày mượn và loại sách mà người dùng muốn mượn (ví dụ, sách bìa mềm hay sách bìa cứng).
+4. Người dùng trả sách: Sau khi mượn sách trong một khoảng thời gian nhất định, người dùng cần trả sách vào thư viện. Người quản lý thư viện sẽ kiểm tra xem sách đó đã được trả đúng hạn hay chưa và xử lý phí trả muộn nếu có. Sau khi trả sách, người quản lý sẽ cập nhật lại trạng thái mượn sách trong hệ thống và ghi lại thông tin ngày trả.
+
+II. Hành động của các bên trong quá trình mượn trả sách:
+1. Người dùng: Người dùng là những người sử dụng dịch vụ mượn sách của thư viện. Họ có thể là sinh viên, giáo viên, hoặc công chúng. Người dùng có trách nhiệm gửi yêu cầu mượn sách, nhận sách và thanh toán phí mượn, và trả sách đúng hạn.
+2. Người quản lý thư viện: Người quản lý thư viện là người chịu trách nhiệm quản lý hoạt động của thư viện. Họ có trách nhiệm xác nhận yêu cầu mượn sách, ghi lại thông tin mượn sách, xử lý phí trả muộn nếu có, và cập nhật lại trạng thái mượn sách sau khi người dùng trả sách.
+3. Hệ thống quản lý thư viện: hệ thống quản lý thư viện có thể là một phần mềm được cài đặt trên máy tính của thư viện hoặc là một dịch vụ được cung cấp trực tuyến. Hệ thống này giúp người quản lý thư viện quản lý và theo dõi các yêu cầu mượn sách, cập nhật thông tin về sách đang mượn và sách đã trả, tìm kiếm sách theo từng tiêu chí và thống kê thông tin về sách mượn và trả trong một khoảng thời gian nhất định.
+
+III. Xử lý vi phạm trong quy trình mượn trả sách:
+1. Xác nhận vi phạm: Đầu tiên, người quản lý thư viện cần xác nhận rõ ràng rằng vi phạm đã xảy ra và là do người dùng mà không phải là một lỗi khác.
+2. Thông báo vi phạm cho người dùng: Sau khi xác nhận vi phạm, người quản lý thư viện cần thông báo cho người dùng về vi phạm đó và yêu cầu họ khắc phục vi phạm trong thời gian quy định.
+3. Xử lý phí trả muộn: Nếu vi phạm là không trả sách đúng hạn, người quản lý thư viện có thể yêu cầu người dùng thanh toán phí trả muộn theo quy định của thư viện.
+4. Cấm mượn sách: Trong trường hợp vi phạm nghiêm trọng hoặc người dùng không khắc phục vi phạm sau khi được thông báo, người quản lý thư viện có thể quyết định cấm người dùng mượn sách trong một khoảng thời gian nhất định. Trong trường hợp này, người dùng sẽ không được phép mượn sách cho đến khi hết thời hạn cấm mượn.
+5. Khôi phục quyền mượn: Sau khi người dùng đã khắc phục vi phạm và hết thời hạn cấm mượn, người quản lý thư viện có thể quyết định khôi phục quyền mượn cho người dùng. Tuy nhiên, trong trường hợp vi phạm nghiêm trọng, người quản lý có thể quyết định không khôi phục quyền mượn cho người dùng.

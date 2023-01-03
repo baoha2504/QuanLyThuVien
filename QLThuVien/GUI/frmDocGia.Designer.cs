@@ -53,9 +53,9 @@
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.lblTieuDe = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem3 = new DevExpress.XtraBars.BarStaticItem();
+            this.lblTime = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
+            this.lblName = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem6 = new DevExpress.XtraBars.BarStaticItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
@@ -66,13 +66,21 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(338, 44);
+            this.mainContainer.Location = new System.Drawing.Point(338, 48);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(921, 659);
+            this.mainContainer.Size = new System.Drawing.Size(921, 655);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
             // 
+            this.accordionControl1.Appearance.Group.Hovered.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Group.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Group.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Item.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Item.Normal.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.TrangChu,
@@ -80,10 +88,10 @@
             this.Sach,
             this.ThongTinTroGiup,
             this.TaiKhoan});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 44);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 48);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(338, 659);
+            this.accordionControl1.Size = new System.Drawing.Size(338, 655);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -234,21 +242,21 @@
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barStaticItem1,
             this.lblTieuDe,
-            this.barStaticItem3,
+            this.lblTime,
             this.barStaticItem4,
-            this.barStaticItem5,
+            this.lblName,
             this.barStaticItem6});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1259, 44);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1259, 48);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem1);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTieuDe);
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem3);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTime);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem4);
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem5);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblName);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem6);
             // 
             // barStaticItem1
@@ -265,16 +273,16 @@
             this.lblTieuDe.ItemAppearance.Normal.Options.UseForeColor = true;
             this.lblTieuDe.Name = "lblTieuDe";
             // 
-            // barStaticItem3
+            // lblTime
             // 
-            this.barStaticItem3.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem3.Caption = "barStaticItem3";
-            this.barStaticItem3.Id = 2;
-            this.barStaticItem3.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.barStaticItem3.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
-            this.barStaticItem3.ItemAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem3.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.barStaticItem3.Name = "barStaticItem3";
+            this.lblTime.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblTime.Caption = "time";
+            this.lblTime.Id = 2;
+            this.lblTime.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblTime.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
+            this.lblTime.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblTime.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.lblTime.Name = "lblTime";
             // 
             // barStaticItem4
             // 
@@ -285,16 +293,16 @@
             this.barStaticItem4.ItemAppearance.Normal.Options.UseFont = true;
             this.barStaticItem4.Name = "barStaticItem4";
             // 
-            // barStaticItem5
+            // lblName
             // 
-            this.barStaticItem5.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem5.Caption = "barStaticItem5";
-            this.barStaticItem5.Id = 4;
-            this.barStaticItem5.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.barStaticItem5.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
-            this.barStaticItem5.ItemAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem5.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.barStaticItem5.Name = "barStaticItem5";
+            this.lblName.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblName.Caption = "name";
+            this.lblName.Id = 4;
+            this.lblName.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblName.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
+            this.lblName.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblName.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.lblName.Name = "lblName";
             // 
             // barStaticItem6
             // 
@@ -311,9 +319,9 @@
             this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.barStaticItem1,
             this.lblTieuDe,
-            this.barStaticItem3,
+            this.lblTime,
             this.barStaticItem4,
-            this.barStaticItem5,
+            this.lblName,
             this.barStaticItem6});
             this.fluentFormDefaultManager1.MaxItemId = 6;
             // 
@@ -364,9 +372,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDangXuat;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
         private DevExpress.XtraBars.BarStaticItem lblTieuDe;
-        private DevExpress.XtraBars.BarStaticItem barStaticItem3;
+        private DevExpress.XtraBars.BarStaticItem lblTime;
         private DevExpress.XtraBars.BarStaticItem barStaticItem4;
-        private DevExpress.XtraBars.BarStaticItem barStaticItem5;
+        private DevExpress.XtraBars.BarStaticItem lblName;
         private DevExpress.XtraBars.BarStaticItem barStaticItem6;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnCuonSach;
     }
