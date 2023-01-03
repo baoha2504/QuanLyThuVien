@@ -18,7 +18,8 @@ namespace QLThuVien.DataAccessLayer
         {
             try
             {
-                string sql = @"Data Source=DESKTOP-KMHEQI5\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                //string sql = @"Data Source=DESKTOP-KMHEQI5\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string sql = @"Data Source=DESKTOP-419TDTA;Initial Catalog=QuanLyThuVien;Integrated Security=True";
                 SqlConnection conn = new SqlConnection(sql);
                 conn.Open();
 
