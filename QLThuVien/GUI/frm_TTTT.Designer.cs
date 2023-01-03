@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.txt_NS = new DevExpress.XtraEditors.DateEdit();
             this.txt_SDT = new DevExpress.XtraEditors.TextEdit();
             this.txt_DC = new DevExpress.XtraEditors.TextEdit();
@@ -36,7 +37,6 @@
             this.txt_TenTT = new DevExpress.XtraEditors.TextEdit();
             this.txt_MaTT = new DevExpress.XtraEditors.TextEdit();
             this.txt_CV = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lbl_MaTT = new DevExpress.XtraLayout.LayoutControlItem();
             this.lbl_TenTT = new DevExpress.XtraLayout.LayoutControlItem();
             this.lbl_GT = new DevExpress.XtraLayout.LayoutControlItem();
@@ -46,6 +46,7 @@
             this.lbl_CV1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_SDT.Properties)).BeginInit();
@@ -54,7 +55,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaTT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CV.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_MaTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_TenTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_GT)).BeginInit();
@@ -81,88 +81,6 @@
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
             // 
-            // txt_NS
-            // 
-            this.txt_NS.EditValue = null;
-            this.txt_NS.Location = new System.Drawing.Point(115, 108);
-            this.txt_NS.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_NS.Name = "txt_NS";
-            this.txt_NS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_NS.Properties.Appearance.Options.UseFont = true;
-            this.txt_NS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_NS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_NS.Size = new System.Drawing.Size(456, 28);
-            this.txt_NS.StyleController = this.layoutControl1;
-            this.txt_NS.TabIndex = 11;
-            // 
-            // txt_SDT
-            // 
-            this.txt_SDT.Location = new System.Drawing.Point(115, 172);
-            this.txt_SDT.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_SDT.Name = "txt_SDT";
-            this.txt_SDT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_SDT.Properties.Appearance.Options.UseFont = true;
-            this.txt_SDT.Size = new System.Drawing.Size(456, 28);
-            this.txt_SDT.StyleController = this.layoutControl1;
-            this.txt_SDT.TabIndex = 9;
-            // 
-            // txt_DC
-            // 
-            this.txt_DC.Location = new System.Drawing.Point(115, 140);
-            this.txt_DC.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_DC.Name = "txt_DC";
-            this.txt_DC.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_DC.Properties.Appearance.Options.UseFont = true;
-            this.txt_DC.Size = new System.Drawing.Size(456, 28);
-            this.txt_DC.StyleController = this.layoutControl1;
-            this.txt_DC.TabIndex = 8;
-            // 
-            // txt_GT
-            // 
-            this.txt_GT.Location = new System.Drawing.Point(115, 76);
-            this.txt_GT.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_GT.Name = "txt_GT";
-            this.txt_GT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GT.Properties.Appearance.Options.UseFont = true;
-            this.txt_GT.Size = new System.Drawing.Size(456, 28);
-            this.txt_GT.StyleController = this.layoutControl1;
-            this.txt_GT.TabIndex = 7;
-            // 
-            // txt_TenTT
-            // 
-            this.txt_TenTT.Location = new System.Drawing.Point(115, 44);
-            this.txt_TenTT.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_TenTT.Name = "txt_TenTT";
-            this.txt_TenTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_TenTT.Properties.Appearance.Options.UseFont = true;
-            this.txt_TenTT.Size = new System.Drawing.Size(456, 28);
-            this.txt_TenTT.StyleController = this.layoutControl1;
-            this.txt_TenTT.TabIndex = 5;
-            // 
-            // txt_MaTT
-            // 
-            this.txt_MaTT.Location = new System.Drawing.Point(115, 12);
-            this.txt_MaTT.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_MaTT.Name = "txt_MaTT";
-            this.txt_MaTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_MaTT.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaTT.Size = new System.Drawing.Size(456, 28);
-            this.txt_MaTT.StyleController = this.layoutControl1;
-            this.txt_MaTT.TabIndex = 4;
-            // 
-            // txt_CV
-            // 
-            this.txt_CV.Location = new System.Drawing.Point(115, 204);
-            this.txt_CV.Margin = new System.Windows.Forms.Padding(4);
-            this.txt_CV.Name = "txt_CV";
-            this.txt_CV.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_CV.Properties.Appearance.Options.UseFont = true;
-            this.txt_CV.Size = new System.Drawing.Size(456, 28);
-            this.txt_CV.StyleController = this.layoutControl1;
-            this.txt_CV.TabIndex = 10;
-            // 
             // layoutControlGroup1
             // 
             this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -178,6 +96,88 @@
             this.layoutControlGroup1.Name = "Root";
             this.layoutControlGroup1.Size = new System.Drawing.Size(583, 295);
             this.layoutControlGroup1.TextVisible = false;
+            // 
+            // txt_NS
+            // 
+            this.txt_NS.EditValue = null;
+            this.txt_NS.Location = new System.Drawing.Point(107, 108);
+            this.txt_NS.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NS.Name = "txt_NS";
+            this.txt_NS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_NS.Properties.Appearance.Options.UseFont = true;
+            this.txt_NS.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_NS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.txt_NS.Size = new System.Drawing.Size(464, 28);
+            this.txt_NS.StyleController = this.layoutControl1;
+            this.txt_NS.TabIndex = 11;
+            // 
+            // txt_SDT
+            // 
+            this.txt_SDT.Location = new System.Drawing.Point(107, 172);
+            this.txt_SDT.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_SDT.Name = "txt_SDT";
+            this.txt_SDT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_SDT.Properties.Appearance.Options.UseFont = true;
+            this.txt_SDT.Size = new System.Drawing.Size(464, 28);
+            this.txt_SDT.StyleController = this.layoutControl1;
+            this.txt_SDT.TabIndex = 9;
+            // 
+            // txt_DC
+            // 
+            this.txt_DC.Location = new System.Drawing.Point(107, 140);
+            this.txt_DC.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_DC.Name = "txt_DC";
+            this.txt_DC.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_DC.Properties.Appearance.Options.UseFont = true;
+            this.txt_DC.Size = new System.Drawing.Size(464, 28);
+            this.txt_DC.StyleController = this.layoutControl1;
+            this.txt_DC.TabIndex = 8;
+            // 
+            // txt_GT
+            // 
+            this.txt_GT.Location = new System.Drawing.Point(107, 76);
+            this.txt_GT.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_GT.Name = "txt_GT";
+            this.txt_GT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_GT.Properties.Appearance.Options.UseFont = true;
+            this.txt_GT.Size = new System.Drawing.Size(464, 28);
+            this.txt_GT.StyleController = this.layoutControl1;
+            this.txt_GT.TabIndex = 7;
+            // 
+            // txt_TenTT
+            // 
+            this.txt_TenTT.Location = new System.Drawing.Point(107, 44);
+            this.txt_TenTT.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_TenTT.Name = "txt_TenTT";
+            this.txt_TenTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_TenTT.Properties.Appearance.Options.UseFont = true;
+            this.txt_TenTT.Size = new System.Drawing.Size(464, 28);
+            this.txt_TenTT.StyleController = this.layoutControl1;
+            this.txt_TenTT.TabIndex = 5;
+            // 
+            // txt_MaTT
+            // 
+            this.txt_MaTT.Location = new System.Drawing.Point(107, 12);
+            this.txt_MaTT.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_MaTT.Name = "txt_MaTT";
+            this.txt_MaTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_MaTT.Properties.Appearance.Options.UseFont = true;
+            this.txt_MaTT.Size = new System.Drawing.Size(464, 28);
+            this.txt_MaTT.StyleController = this.layoutControl1;
+            this.txt_MaTT.TabIndex = 4;
+            // 
+            // txt_CV
+            // 
+            this.txt_CV.Location = new System.Drawing.Point(107, 204);
+            this.txt_CV.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_CV.Name = "txt_CV";
+            this.txt_CV.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_CV.Properties.Appearance.Options.UseFont = true;
+            this.txt_CV.Size = new System.Drawing.Size(464, 28);
+            this.txt_CV.StyleController = this.layoutControl1;
+            this.txt_CV.TabIndex = 10;
             // 
             // lbl_MaTT
             // 
@@ -270,6 +270,7 @@
             this.Load += new System.EventHandler(this.frm_TTTT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_SDT.Properties)).EndInit();
@@ -278,7 +279,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaTT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CV.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_MaTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_TenTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_GT)).EndInit();

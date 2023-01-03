@@ -27,6 +27,8 @@ namespace QLThuVien.GUI
         private void frmDocGia_Load(object sender, EventArgs e)
         {
             btnTrangChu_Click(sender, e);
+            lblName.Caption = DangNhap.name;
+            lblTime.Caption = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)

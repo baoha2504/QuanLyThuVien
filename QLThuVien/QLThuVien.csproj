@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeRush.Common, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
     <Reference Include="DevExpress.CodeRush.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
@@ -212,6 +213,12 @@
     <Compile Include="GUI\frm_PN.Designer.cs">
       <DependentUpon>frm_PN.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_QuyDinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_QuyDinh.Designer.cs">
+      <DependentUpon>frm_QuyDinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TG.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -313,6 +320,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_PN.resx">
       <DependentUpon>frm_PN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_QuyDinh.resx">
+      <DependentUpon>frm_QuyDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TG.resx">
       <DependentUpon>frm_TG.cs</DependentUpon>
@@ -766,6 +776,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nền.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QuyDinh.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

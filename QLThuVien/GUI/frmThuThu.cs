@@ -29,10 +29,13 @@ namespace QLThuVien.GUI
         frm_DG frm_DG;
         frm_CS frm_CS;
         frm_TK frm_TK;
+        frm_QuyDinh frm_QuyDinh;
 
         private void frmThuThu_Load(object sender, EventArgs e)
         {
             btnTrangChu_Click(sender, e);
+            lblName.Caption = DangNhap.name;
+            lblTime.Caption = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
@@ -236,6 +239,22 @@ namespace QLThuVien.GUI
                 frm_TK.BringToFront();
             }
             lblTieuDe.Caption = "Thống kê tựa sách";
+        }
+
+        private void btnQuyDinh_Click(object sender, EventArgs e)
+        {
+            if (frm_QuyDinh == null)
+            {
+                frm_QuyDinh frm_QuyDinh = new frm_QuyDinh();
+                frm_QuyDinh.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_QuyDinh);
+                frm_QuyDinh.BringToFront();
+            }
+            else
+            {
+                frm_QuyDinh.BringToFront();
+            }
+            lblTieuDe.Caption = "Quy định thư viện";
         }
     }
 }
