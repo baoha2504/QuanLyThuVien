@@ -18,7 +18,7 @@ namespace QLThuVien.DataAccessLayer
         {
             try
             {
-                string sql = @"Data Source=DESKTOP-KMHEQI5\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
+                string sql = @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
                 SqlConnection conn = new SqlConnection(sql);
                 conn.Open();
 
@@ -73,6 +73,23 @@ namespace QLThuVien.DataAccessLayer
             }
           
         }
-      
+
+        public static void ExecuteQuery(string query)
+        {
+            try
+            {
+                conn = Connect();
+                SqlCommand sqlDa = new SqlCommand(query, conn);
+                sqlDa.ExecuteNonQuery();
+
+                int val = sqlDa.ExecuteNonQuery();
+                conn.Close();
+            }
+            catch (SqlException)
+            {
+            }
+
+        }
+
     }
 }

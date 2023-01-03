@@ -30,6 +30,7 @@ namespace QLThuVien.GUI
         frm_CS frm_CS;
         frm_TK frm_TK;
         frm_QuyDinh frm_QuyDinh;
+        frm_DoiMK frm_DoiMK;
 
         private void frmThuThu_Load(object sender, EventArgs e)
         {
@@ -255,6 +256,22 @@ namespace QLThuVien.GUI
                 frm_QuyDinh.BringToFront();
             }
             lblTieuDe.Caption = "Quy định thư viện";
+        }
+
+        private void btnDoiMatKhau_Click(object sender, EventArgs e)
+        {
+            if (frm_DoiMK == null)
+            {
+                frm_DoiMK frm_DoiMK = new frm_DoiMK();
+                frm_DoiMK.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_DoiMK);
+                frm_DoiMK.BringToFront();
+            }
+            else
+            {
+                frm_DoiMK.BringToFront();
+            }
+            lblTieuDe.Caption = "Đổi mật khẩu";
         }
     }
 }

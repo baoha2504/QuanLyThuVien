@@ -177,6 +177,12 @@
     <Compile Include="GUI\frm_DG.Designer.cs">
       <DependentUpon>frm_DG.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_DoiMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DoiMK.Designer.cs">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_GT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -302,6 +308,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_DG.resx">
       <DependentUpon>frm_DG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DoiMK.resx">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_GT.resx">
       <DependentUpon>frm_GT.cs</DependentUpon>

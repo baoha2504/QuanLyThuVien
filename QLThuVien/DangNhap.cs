@@ -23,6 +23,8 @@ namespace QLThuVien
         public DangNhap login;
         public static string name;
         public static string id;
+        public static string quyen;
+        public static string hashpass;
         
         public DangNhap()
         {
@@ -59,6 +61,7 @@ namespace QLThuVien
             DataTable log1 = new DataTable();
             string sql1 = "select *from ThuThu where MaTT= '" + User + "'" + "and MatKhau = '" + ComputeSha256Hash(Password) + "'";
             log1 = DataProvider.GetData(sql1);
+            hashpass = ComputeSha256Hash(Password);
             int i = 0;
             i = log1.Rows.Count;
             if (i == 1)
@@ -68,6 +71,7 @@ namespace QLThuVien
                     name = dr["TenTT"].ToString();
                     id = dr["MaTT"].ToString();
                 }
+                quyen = "ThuThu";
                 this.Hide();
                 frmThuThu frmThuThu = new frmThuThu();
                 frmThuThu.Show();
@@ -85,6 +89,7 @@ namespace QLThuVien
                         name = dr["TenDG"].ToString();
                         id = dr["MaDG"].ToString();
                     }
+                    quyen = "DocGia";
                     this.Hide();
                     frmDocGia frmDocGia = new frmDocGia();
                     frmDocGia.Show();

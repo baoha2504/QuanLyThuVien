@@ -691,3 +691,4 @@ D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.exe
 D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.pdb
 D:\QuanLyThuVien\QLThuVien\bin\Debug\DevExpress.BonusSkins.v21.2.dll
 D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_QuyDinh.resources
+D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_DoiMK.resources
