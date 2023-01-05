@@ -44,6 +44,15 @@ namespace QLThuVien.GUI
             gridColumn5.Width = 100;
         }
 
+        public void An()
+        {
+            btn_insert.Visible = false;
+            btn_update.Visible = false;
+            btn_delete.Visible = false;
+            btn_save.Visible = false;
+            btn_cancel.Visible = false;
+        }
+
         private void gridView1_Click(object sender, EventArgs e)
         {
             LoadData();

@@ -102,6 +102,15 @@ namespace QLThuVien.GUI
             insert = false;
         }
 
+        public void An()
+        {
+            btn_insert.Visible = false;
+            btn_update.Visible = false;
+            btn_delete.Visible = false;
+            btn_save.Visible = false;
+            btn_cancel.Visible = false;
+        }
+
         private void btn_save_Click(object sender, EventArgs e)
         {
             NXB nxb2 = new NXB();
