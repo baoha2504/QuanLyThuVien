@@ -33,7 +33,14 @@ namespace QLThuVien.GUI
             if (currenRowIndex < 0) return;
             txt_MaCS.Text = gridView1.GetRowCellValue(currenRowIndex, gridView1.Columns["MaCS"]).ToString();
             txt_TenTS.Text = gridView1.GetRowCellValue(currenRowIndex, gridView1.Columns["TenTS"]).ToString();
+        }
 
+        public void An()
+        {
+            btn_insert.Visible = false;
+            btn_update.Visible = false;
+            btn_delete.Visible = false;
+            btn_save.Visible = false;
         }
         private void frm_CS_Load(object sender, EventArgs e)
         {

@@ -46,7 +46,7 @@
             this.btnKeSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnViTri = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ThongTinTroGiup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnThongTinTroGiup = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnQuyDinh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.TaiKhoan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDoiMatKhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -203,16 +203,17 @@
             // ThongTinTroGiup
             // 
             this.ThongTinTroGiup.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnThongTinTroGiup});
+            this.btnQuyDinh});
             this.ThongTinTroGiup.Expanded = true;
             this.ThongTinTroGiup.Name = "ThongTinTroGiup";
             this.ThongTinTroGiup.Text = "Thông tin trợ giúp";
             // 
-            // btnThongTinTroGiup
+            // btnQuyDinh
             // 
-            this.btnThongTinTroGiup.Name = "btnThongTinTroGiup";
-            this.btnThongTinTroGiup.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnThongTinTroGiup.Text = "Thông tin trợ giúp";
+            this.btnQuyDinh.Name = "btnQuyDinh";
+            this.btnQuyDinh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnQuyDinh.Text = "Quy định thư viện";
+            this.btnQuyDinh.Click += new System.EventHandler(this.btnQuyDinh_Click);
             // 
             // TaiKhoan
             // 
@@ -368,7 +369,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNhaXuatBan;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnKeSach;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnViTri;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnThongTinTroGiup;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnQuyDinh;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDoiMatKhau;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDangXuat;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
