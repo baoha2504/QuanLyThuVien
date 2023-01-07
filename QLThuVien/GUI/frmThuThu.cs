@@ -33,6 +33,8 @@ namespace QLThuVien.GUI
         frm_DoiMK frm_DoiMK;
         frm_VTK frm_VTK;
         frm_TraSach frm_TraSach;
+        frm_DSViPham frm_DSViPham;
+        frm_LSViPham frm_LSViPham;
 
         public void An()
         {
@@ -311,6 +313,38 @@ namespace QLThuVien.GUI
                 frm_TraSach.BringToFront();
             }
             lblTieuDe.Caption = "Trả sách";
+        }
+
+        private void btnXuPhat_Click(object sender, EventArgs e)
+        {
+            if (frm_DSViPham == null)
+            {
+                frm_DSViPham frm_DSViPham = new frm_DSViPham();
+                frm_DSViPham.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_DSViPham);
+                frm_DSViPham.BringToFront();
+            }
+            else
+            {
+                frm_TraSach.BringToFront();
+            }
+            lblTieuDe.Caption = "Xử lý vi phạm";
+        }
+
+        private void btnDSViPham_Click(object sender, EventArgs e)
+        {
+            if (frm_LSViPham == null)
+            {
+                frm_LSViPham frm_LSViPham = new frm_LSViPham();
+                frm_LSViPham.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_LSViPham);
+                frm_LSViPham.BringToFront();
+            }
+            else
+            {
+                frm_LSViPham.BringToFront();
+            }
+            lblTieuDe.Caption = "Danh sách vi phạm";
         }
     }
 }

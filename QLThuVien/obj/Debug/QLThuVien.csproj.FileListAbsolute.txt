@@ -695,3 +695,4 @@ D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_DoiMK.resources
 D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_VTK.resources
 D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_TraSach.resources
 D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_DSViPham.resources
+D:\QuanLyThuVien\QLThuVien\obj\Debug\QLThuVien.GUI.frm_LSViPham.resources

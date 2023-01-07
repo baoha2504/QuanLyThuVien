@@ -60,8 +60,15 @@ namespace QLThuVien.GUI
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            string std = string.Format("TenDG like '%{0}%'", txt_search.Text);
-            dt.DefaultView.RowFilter = std;
+            if(txt_search.Text != string.Empty)
+            {
+                query = "select PhieuMuon.MaPM,NgayMuon,NgayTra,PhieuMuon.MaDG,TenDG,PhieuMuon.MaTT, TenTT,ChiTietMuon.MaCS,TuaSach.MaTS,TenTS,TinhTrang, TinhTrangTra " +
+                "from PhieuMuon, DocGia, ThuThu, ChiTietMuon, TuaSach,CuonSach " +
+                "where PhieuMuon.MaDG= DocGia.MaDG and PhieuMuon.MaTT=ThuThu.MaTT and PhieuMuon.MaPM=ChiTietMuon.MaPM " +
+                "and TuaSach.MaTS= CuonSach.MaTS and CuonSach.MaCS=ChiTietMuon.MaCS and ChiTietMuon.TinhTrangTra = N'Đã mượn' " +
+                "and TenDG like N'%" + txt_search.Text + "%' ";
+                gridControl1.DataSource = DataProvider.GetData(query);
+            }
         }
 
         private void txt_search_MouseClick(object sender, MouseEventArgs e)
@@ -90,7 +97,6 @@ namespace QLThuVien.GUI
 
         private void btn_save_Click(object sender, EventArgs e)
         {
-
             if (MessageBox.Show("Bạn muốn lưu dữ liệu được thay đổi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
             {
                 query = "UPDATE ChiTietMuon " +

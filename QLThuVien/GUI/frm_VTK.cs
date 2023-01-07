@@ -143,13 +143,22 @@ namespace QLThuVien.GUI
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            string std = string.Format("MaKe like '%{0}%'", txt_search.Text);
-            dt.DefaultView.RowFilter = std;
+            if (txt_search.Text != string.Empty)
+            {
+                string sql1 = "select * from vitri where DiaChi like '%" + txt_search.Text + "%'";
+                dt = DataProvider.GetData(sql1);
+                gridControl1.DataSource = dt;
+            }
         }
 
         private void gridView1_Click(object sender, EventArgs e)
         {
             LoadData();
+        }
+
+        private void txt_search_MouseClick(object sender, MouseEventArgs e)
+        {
+            txt_search.Text = string.Empty;
         }
     }
 }

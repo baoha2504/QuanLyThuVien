@@ -292,12 +292,14 @@
             this.btnDSViPham.Name = "btnDSViPham";
             this.btnDSViPham.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDSViPham.Text = "Danh sách vi phạm";
+            this.btnDSViPham.Click += new System.EventHandler(this.btnDSViPham_Click);
             // 
             // btnXuPhat
             // 
             this.btnXuPhat.Name = "btnXuPhat";
             this.btnXuPhat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnXuPhat.Text = "Xử phạt";
+            this.btnXuPhat.Click += new System.EventHandler(this.btnXuPhat_Click);
             // 
             // ThongTinTroGiup
             // 

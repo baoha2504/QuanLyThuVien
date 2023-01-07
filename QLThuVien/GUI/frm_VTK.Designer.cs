@@ -226,6 +226,7 @@
             this.txt_search.Size = new System.Drawing.Size(319, 42);
             this.txt_search.TabIndex = 17;
             this.txt_search.Text = "Search";
+            this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
             this.txt_search.TextChanged += new System.EventHandler(this.txt_search_TextChanged);
             // 
             // btn_save
