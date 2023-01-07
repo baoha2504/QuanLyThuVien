@@ -25,6 +25,7 @@ namespace QLThuVien
         public static string id;
         public static string quyen;
         public static string hashpass;
+        public static string chucvu;
         
         public DangNhap()
         {
@@ -70,11 +71,21 @@ namespace QLThuVien
                 {
                     name = dr["TenTT"].ToString();
                     id = dr["MaTT"].ToString();
+                    chucvu = dr["Chucvu"].ToString();
                 }
                 quyen = "ThuThu";
-                this.Hide();
-                frmThuThu frmThuThu = new frmThuThu();
-                frmThuThu.Show();
+                if (chucvu == "Admin")
+                {
+                    this.Hide();
+                    frmThuThu frmThuThu = new frmThuThu();
+                    frmThuThu.Show();
+                } else
+                {
+                    this.Hide();
+                    frmThuThu frmThuThu = new frmThuThu();
+                    frmThuThu.An();
+                    frmThuThu.Show();
+                }
             }
             else
             {

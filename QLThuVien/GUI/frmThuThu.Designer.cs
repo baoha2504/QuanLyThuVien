@@ -153,6 +153,7 @@
             this.btnTraSach.Name = "btnTraSach";
             this.btnTraSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTraSach.Text = "Trả sách";
+            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
             // 
             // QuanLySach
             // 
@@ -207,6 +208,7 @@
             this.btnViTriKe.Name = "btnViTriKe";
             this.btnViTriKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnViTriKe.Text = "Vị trí kệ";
+            this.btnViTriKe.Click += new System.EventHandler(this.btnViTriKe_Click);
             // 
             // QuanLyNhapSach
             // 

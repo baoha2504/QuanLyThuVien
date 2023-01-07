@@ -31,6 +31,13 @@ namespace QLThuVien.GUI
         frm_TK frm_TK;
         frm_QuyDinh frm_QuyDinh;
         frm_DoiMK frm_DoiMK;
+        frm_VTK frm_VTK;
+        frm_TraSach frm_TraSach;
+
+        public void An()
+        {
+            QuanLyTaiKhoan.Visible = false;
+        }
 
         private void frmThuThu_Load(object sender, EventArgs e)
         {
@@ -272,6 +279,38 @@ namespace QLThuVien.GUI
                 frm_DoiMK.BringToFront();
             }
             lblTieuDe.Caption = "Đổi mật khẩu";
+        }
+
+        private void btnViTriKe_Click(object sender, EventArgs e)
+        {
+            if (frm_VTK == null)
+            {
+                frm_VTK frm_VTK = new frm_VTK();
+                frm_VTK.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_VTK);
+                frm_VTK.BringToFront();
+            }
+            else
+            {
+                frm_VTK.BringToFront();
+            }
+            lblTieuDe.Caption = "Vị trí kệ";
+        }
+
+        private void btnTraSach_Click(object sender, EventArgs e)
+        {
+            if (frm_TraSach == null)
+            {
+                frm_TraSach frm_TraSach = new frm_TraSach();
+                frm_TraSach.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TraSach);
+                frm_TraSach.BringToFront();
+            }
+            else
+            {
+                frm_TraSach.BringToFront();
+            }
+            lblTieuDe.Caption = "Trả sách";
         }
     }
 }
