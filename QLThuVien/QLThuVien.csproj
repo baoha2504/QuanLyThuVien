@@ -87,6 +87,9 @@
     <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualStudio.Shell, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -177,6 +180,12 @@
     <Compile Include="GUI\frm_DG.Designer.cs">
       <DependentUpon>frm_DG.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_DoiMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DoiMK.Designer.cs">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_GT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -207,6 +216,12 @@
     <Compile Include="GUI\frm_PM.Designer.cs">
       <DependentUpon>frm_PM.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_PMDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PMDG.Designer.cs">
+      <DependentUpon>frm_PMDG.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_PN.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -219,6 +234,12 @@
     <Compile Include="GUI\frm_QuyDinh.Designer.cs">
       <DependentUpon>frm_QuyDinh.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_TB_TT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TB_TT.Designer.cs">
+      <DependentUpon>frm_TB_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TG.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -230,6 +251,18 @@
     </Compile>
     <Compile Include="GUI\frm_TK.Designer.cs">
       <DependentUpon>frm_TK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TKDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TKDG.Designer.cs">
+      <DependentUpon>frm_TKDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TKNS_TT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TKNS_TT.Designer.cs">
+      <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_TS.cs">
       <SubType>UserControl</SubType>
@@ -254,6 +287,12 @@
     </Compile>
     <Compile Include="GUI\frm_TTDG.Designer.cs">
       <DependentUpon>frm_TTDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_VTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_VTK.Designer.cs">
+      <DependentUpon>frm_VTK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -303,6 +342,9 @@
     <EmbeddedResource Include="GUI\frm_DG.resx">
       <DependentUpon>frm_DG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DoiMK.resx">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_GT.resx">
       <DependentUpon>frm_GT.cs</DependentUpon>
     </EmbeddedResource>
@@ -318,17 +360,29 @@
     <EmbeddedResource Include="GUI\frm_PM.resx">
       <DependentUpon>frm_PM.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PMDG.resx">
+      <DependentUpon>frm_PMDG.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_PN.resx">
       <DependentUpon>frm_PN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_QuyDinh.resx">
       <DependentUpon>frm_QuyDinh.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TB_TT.resx">
+      <DependentUpon>frm_TB_TT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TG.resx">
       <DependentUpon>frm_TG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TK.resx">
       <DependentUpon>frm_TK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TKDG.resx">
+      <DependentUpon>frm_TKDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TKNS_TT.resx">
+      <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TS.resx">
       <DependentUpon>frm_TS.cs</DependentUpon>
@@ -342,6 +396,9 @@
     <EmbeddedResource Include="GUI\frm_TTDG.resx">
       <DependentUpon>frm_TTDG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_VTK.resx">
+      <DependentUpon>frm_VTK.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -353,6 +410,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
