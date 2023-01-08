@@ -103,6 +103,11 @@ namespace QLThuVien.GUI
                     "SET TinhTrangTra = N'" + txt_TTTra.Text + "' " +
                     "WHERE MaPM = N'" + txt_MaPM.Text + "' and MaCS = N'" + txt_MaCS.Text + "'";
                 DataProvider.ExecuteQuery(query);
+                if(txt_TTTra.Text.Trim() == "Đã trả")
+                {
+                    query = "UPDATE TuaSach SET SoLuong = SoLuong + 1 WHERE TenTS = N'" + txt_TenTS.Text + "'";
+                    DataProvider.ExecuteQuery(query);
+                }
                 ReLoadData();
             }
 

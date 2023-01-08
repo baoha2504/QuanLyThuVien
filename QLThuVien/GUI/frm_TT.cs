@@ -127,7 +127,7 @@ namespace QLThuVien.GUI
                 {
                     DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
 
-                    string sql = "select *from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
+                    string sql = "select * from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
                     test = DataProvider.GetData(sql);
                     int i = test.Rows.Count;
                     if (i > 0)

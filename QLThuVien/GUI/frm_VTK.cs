@@ -148,6 +148,11 @@ namespace QLThuVien.GUI
                 string sql1 = "select * from vitri where DiaChi like '%" + txt_search.Text + "%'";
                 dt = DataProvider.GetData(sql1);
                 gridControl1.DataSource = dt;
+            } else
+            {
+                string sql1 = "select * from vitri";
+                dt = DataProvider.GetData(sql1);
+                gridControl1.DataSource = dt;
             }
         }
 
