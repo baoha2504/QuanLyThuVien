@@ -82,7 +82,7 @@ namespace QLThuVien.DataAccessLayer
                 SqlCommand sqlDa = new SqlCommand(query, conn);
                 sqlDa.ExecuteNonQuery();
 
-                int val = sqlDa.ExecuteNonQuery();
+                //int val = sqlDa.ExecuteNonQuery();
                 conn.Close();
             }
             catch (SqlException)

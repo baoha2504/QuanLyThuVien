@@ -108,6 +108,7 @@ namespace QLThuVien
                 else
                 {
                     lbl_TTlogin.Text = "Thông tin sai!!";
+                    MessageBox.Show("Kiểm tra lại thông tin đăng nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
         }

@@ -318,12 +318,12 @@ namespace QLThuVien.DataAccessLayer
         {
             SqlParameter[] para = new SqlParameter[]
             {
-                      new SqlParameter("@madg", a.MaDG),
-                      new SqlParameter("@tendg", a.TenDG),
-                      new SqlParameter("@gioitinhdg", a.GioiTinh),
-                      new SqlParameter("@ngaysinhdg", a.NgaySinh),
-                      new SqlParameter("@diachidg", a.DiaChi),
-                      new SqlParameter("@sdtdg", a.SDT),
+                      new SqlParameter("@MaDG", a.MaDG),
+                      new SqlParameter("@TenDG", a.TenDG),
+                      new SqlParameter("@NgaySinh", a.NgaySinh),
+                      new SqlParameter("@GioiTinh", a.GioiTinh),
+                      new SqlParameter("@SDT", a.SDT),
+                      new SqlParameter("@DiaChi", a.DiaChi),
 
             };
             return DataProvider.ExecuteNonQuery("Insert_DG", para);
