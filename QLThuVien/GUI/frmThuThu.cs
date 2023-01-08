@@ -31,6 +31,12 @@ namespace QLThuVien.GUI
         frm_TK frm_TK;
         frm_QuyDinh frm_QuyDinh;
         frm_DoiMK frm_DoiMK;
+        frm_TKNS_TT frm_TKNS_TT;
+        frm_TB_TT frm_TB_TT;
+        public void An()
+        {
+            QuanLyTaiKhoan.Visible = false;
+        }
 
         private void frmThuThu_Load(object sender, EventArgs e)
         {
@@ -272,6 +278,43 @@ namespace QLThuVien.GUI
                 frm_DoiMK.BringToFront();
             }
             lblTieuDe.Caption = "Đổi mật khẩu";
+        }
+
+        private void btnViTriKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTKNhapSachTT_Click(object sender, EventArgs e)
+        {
+            if (frm_TKNS_TT == null)
+            {
+                frm_TKNS_TT frm_TKNS_TT = new frm_TKNS_TT();
+                frm_TKNS_TT.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TKNS_TT);
+                frm_TKNS_TT.BringToFront();
+            }
+            else
+            {
+                frm_TKNS_TT.BringToFront();
+            }
+            lblTieuDe.Caption = "Thống kê sách mới nhập";
+        }
+
+        private void btnThongBao_Click(object sender, EventArgs e)
+        {
+            if (frm_TB_TT == null)
+            {
+                frm_TB_TT frm_TB_TT = new frm_TB_TT();
+                frm_TB_TT.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TB_TT);
+                frm_TB_TT.BringToFront();
+            }
+            else
+            {
+                frm_TB_TT.BringToFront();
+            }
+            lblTieuDe.Caption = "Thông báo";
         }
     }
 }

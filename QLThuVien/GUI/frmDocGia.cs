@@ -25,6 +25,8 @@ namespace QLThuVien.GUI
         frm_KS frm_KS;
         frm_DoiMK frm_DoiMK;
         frm_QuyDinh frm_QuyDinh;
+        frm_PMDG frm_phieumuon;
+        frm_TKDG frm_TKDG;
 
         private void frmDocGia_Load(object sender, EventArgs e)
         {
@@ -180,6 +182,44 @@ namespace QLThuVien.GUI
                 frm_QuyDinh.BringToFront();
             }
             lblTieuDe.Caption = "Quy định thư viện";
+        }
+
+        private void btnPhieuMuon_Click(object sender, EventArgs e)
+        {
+            if (frm_phieumuon == null)
+            {
+                frm_PMDG frm_phieumuon = new frm_PMDG();
+                frm_phieumuon.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_phieumuon);
+                frm_phieumuon.BringToFront();
+            }
+            else
+            {
+                frm_phieumuon.BringToFront();
+            }
+            lblTieuDe.Caption = "Thông tin phiếu mượn trả";
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            if (frm_TKDG == null)
+            {
+                frm_TKDG frm_TKDG = new frm_TKDG();
+                frm_TKDG.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TKDG);
+                frm_TKDG.BringToFront();
+            }
+            else
+            {
+                frm_TKDG.BringToFront();
+            }
+            lblTieuDe.Caption = "Thống kê";
+
+        }
+
+        private void btnThongBao_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

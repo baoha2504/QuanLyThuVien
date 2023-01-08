@@ -116,23 +116,30 @@ namespace QLThuVien.GUI
 
             if (insert)
             {
-                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (string.IsNullOrEmpty(txt_MaDG.Text) && string.IsNullOrEmpty(txt_TenDG.Text) || string.IsNullOrEmpty(cmb_GT.Text)
+                    || string.IsNullOrEmpty(txt_SDT.Text) || string.IsNullOrEmpty(txt_DC.Text))
+                    MessageBox.Show("Bạn phải nhập đầy đủ dữ liệu trước khi update!", "WARM", MessageBoxButtons.OKCancel);
+                else
                 {
-                    DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
-
-                    string sql = "select *from DocGia where MaDG= '" + txt_MaDG.Text + "'";
-                    test = DataProvider.GetData(sql);
-                    int i = test.Rows.Count;
-                    if (i > 0)
-                        MessageBox.Show("Đã tồn tại " + txt_MaDG.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    else
+                    if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
-                        gridControl1.DataSource = BUS.Insert_DG(dg2);
-                        MessageBox.Show("Đã lưu thành công");
-                        gridControl1.DataSource = BUS.Select_DG();
-                        LoadData();
+                        DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
+
+                        string sql = "select *from DocGia where MaDG= '" + txt_MaDG.Text + "'";
+                        test = DataProvider.GetData(sql);
+                        int i = test.Rows.Count;
+                        if (i > 0)
+                            MessageBox.Show("Đã tồn tại " + txt_MaDG.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        else
+                        {
+                            gridControl1.DataSource = BUS.Insert_DG(dg2);
+                            MessageBox.Show("Đã lưu thành công");
+                            gridControl1.DataSource = BUS.Select_DG();
+                            LoadData();
+                        }
                     }
                 }
+                
             }
             if (update)
             {

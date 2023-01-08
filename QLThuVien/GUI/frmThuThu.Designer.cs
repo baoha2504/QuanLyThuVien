@@ -52,7 +52,7 @@
             this.btnDocGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ThongKe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTKTuaSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnTKMuonTra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnTKNhapSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.XuLyViPham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDSViPham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnXuPhat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -131,6 +131,7 @@
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongBao.Text = "Thông báo";
+            this.btnThongBao.Click += new System.EventHandler(this.btnThongBao_Click);
             // 
             // QuanLyMuonTra
             // 
@@ -207,6 +208,7 @@
             this.btnViTriKe.Name = "btnViTriKe";
             this.btnViTriKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnViTriKe.Text = "Vị trí kệ";
+            this.btnViTriKe.Click += new System.EventHandler(this.btnViTriKe_Click);
             // 
             // QuanLyNhapSach
             // 
@@ -258,7 +260,7 @@
             // 
             this.ThongKe.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnTKTuaSach,
-            this.btnTKMuonTra});
+            this.btnTKNhapSach});
             this.ThongKe.Expanded = true;
             this.ThongKe.Name = "ThongKe";
             this.ThongKe.Text = "Thống kê";
@@ -267,14 +269,15 @@
             // 
             this.btnTKTuaSach.Name = "btnTKTuaSach";
             this.btnTKTuaSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTKTuaSach.Text = "Tựa sách";
+            this.btnTKTuaSach.Text = "Mượn trả";
             this.btnTKTuaSach.Click += new System.EventHandler(this.btnTKTuaSach_Click);
             // 
-            // btnTKMuonTra
+            // btnTKNhapSach
             // 
-            this.btnTKMuonTra.Name = "btnTKMuonTra";
-            this.btnTKMuonTra.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTKMuonTra.Text = "Mượn trả";
+            this.btnTKNhapSach.Name = "btnTKNhapSach";
+            this.btnTKNhapSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnTKNhapSach.Text = "Nhập sách";
+            this.btnTKNhapSach.Click += new System.EventHandler(this.btnTKNhapSachTT_Click);
             // 
             // XuLyViPham
             // 
@@ -474,7 +477,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNhaCC;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ThongKe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKTuaSach;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKMuonTra;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKNhapSach;
         private DevExpress.XtraBars.Navigation.AccordionControlElement XuLyViPham;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDSViPham;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnXuPhat;

@@ -128,7 +128,7 @@ using QLThuVien.Form_Info;
 
             if (insert)
             {
-                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mới không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
                     string sql = "select *from PhieuMuon where MaPM= '" + txt_MaPM.Text + "'";
