@@ -278,7 +278,7 @@
             this.btnTKNhapSach.Name = "btnTKNhapSach";
             this.btnTKNhapSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTKNhapSach.Text = "Nhập sách";
-            this.btnTKNhapSach.Click += new System.EventHandler(this.btnTKNhapSachTT_Click);
+            this.btnTKNhapSach.Click += new System.EventHandler(this.btnTKNhapSach_Click);
             // 
             // XuLyViPham
             // 

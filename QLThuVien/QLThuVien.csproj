@@ -275,6 +275,7 @@
     </Compile>
     <Compile Include="GUI\frm_TKNS_TT.Designer.cs">
       <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TraSach.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -406,6 +407,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TKNS_TT.resx">
       <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TraSach.resx">
       <DependentUpon>frm_TraSach.cs</DependentUpon>
     </EmbeddedResource>

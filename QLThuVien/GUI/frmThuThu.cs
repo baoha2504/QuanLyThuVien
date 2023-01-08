@@ -348,5 +348,37 @@ namespace QLThuVien.GUI
             }
             lblTieuDe.Caption = "Danh sách vi phạm";
         }
+
+        private void btnThongBao_Click(object sender, EventArgs e)
+        {
+            if (frm_TB_TT == null)
+            {
+                frm_TB_TT frm_TB_TT = new frm_TB_TT();
+                frm_TB_TT.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TB_TT);
+                frm_TB_TT.BringToFront();
+            }
+            else
+            {
+                frm_TB_TT.BringToFront();
+            }
+            lblTieuDe.Caption = "Thông báo";
+        }
+
+        private void btnTKNhapSach_Click(object sender, EventArgs e)
+        {
+            if (frm_TKNS_TT == null)
+            {
+                frm_TKNS_TT frm_TKNS_TT = new frm_TKNS_TT();
+                frm_TKNS_TT.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(frm_TKNS_TT);
+                frm_TKNS_TT.BringToFront();
+            }
+            else
+            {
+                frm_TKNS_TT.BringToFront();
+            }
+            lblTieuDe.Caption = "Thống kê nhập sách";
+        }
     }
 }
