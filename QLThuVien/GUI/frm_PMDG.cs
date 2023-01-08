@@ -46,8 +46,19 @@ namespace QLThuVien.GUI
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            string std = string.Format("TenTS like '%{0}%'", txt_search.Text);
-            //gridControlPM.DefaultView.RowFilter = std;
+            if(txt_search.Text != string.Empty)
+            {
+                string query = "select PhieuMuon.MaPM ,NgayMuon ,NgayTra,ChiTietMuon.MaCS,TenTS , TenTT,TinhTrang " +
+                  " from PhieuMuon, DocGia, ThuThu, ChiTietMuon, TuaSach, CuonSach" +
+                  " where PhieuMuon.MaDG= DocGia.MaDG and PhieuMuon.MaTT= ThuThu.MaTT " +
+                  "and PhieuMuon.MaPM= ChiTietMuon.MaPM and TenTS LIKE N'%"+ txt_search.Text+ "%'" +
+                  " and TuaSach.MaTS= CuonSach.MaTS and CuonSach.MaCS= ChiTietMuon.MaCS and PhieuMuon.MaDG = N'" + DangNhap.id.Trim() + "'";
+                gridControlPM.DataSource = DataProvider.GetData(query);
+            } else
+            {
+                connect();
+            }
+            
         }
 
         private void txt_search_MouseClick(object sender, MouseEventArgs e)
