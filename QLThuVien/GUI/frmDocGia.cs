@@ -27,7 +27,6 @@ namespace QLThuVien.GUI
         frm_QuyDinh frm_QuyDinh;
         frm_PMDG frm_phieumuon;
         frm_TKDG frm_TKDG;
-
         private void frmDocGia_Load(object sender, EventArgs e)
         {
             btnTrangChu_Click(sender, e);
@@ -54,7 +53,7 @@ namespace QLThuVien.GUI
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult result = MessageBox.Show("Bạn có chắc muốn đăng xuất?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (result == DialogResult.Yes)
             {
                 DangNhap frmLogin = new DangNhap();
@@ -182,7 +181,7 @@ namespace QLThuVien.GUI
             {
                 frm_QuyDinh.BringToFront();
             }
-            lblTieuDe.Caption = "Quy định thư viện";
+            lblTieuDe.Caption = "Quy định của thư viện";
         }
 
         private void btnPhieuMuon_Click(object sender, EventArgs e)
