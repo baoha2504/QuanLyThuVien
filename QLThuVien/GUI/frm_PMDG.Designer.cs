@@ -55,6 +55,7 @@ namespace QLThuVien.GUI
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtNM.Properties)).BeginInit();
@@ -64,6 +65,9 @@ namespace QLThuVien.GUI
             ((System.ComponentModel.ISupportInitialize)(this.txtStatus.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cs.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // gridControlPM
@@ -71,11 +75,11 @@ namespace QLThuVien.GUI
             this.gridControlPM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControlPM.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControlPM.Location = new System.Drawing.Point(118, 277);
+            this.gridControlPM.Location = new System.Drawing.Point(51, 201);
             this.gridControlPM.MainView = this.gridView1;
             this.gridControlPM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlPM.Name = "gridControlPM";
-            this.gridControlPM.Size = new System.Drawing.Size(1005, 465);
+            this.gridControlPM.Size = new System.Drawing.Size(958, 358);
             this.gridControlPM.TabIndex = 16;
             this.gridControlPM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -201,7 +205,7 @@ namespace QLThuVien.GUI
             // txtNM
             // 
             this.txtNM.Enabled = false;
-            this.txtNM.Location = new System.Drawing.Point(266, 97);
+            this.txtNM.Location = new System.Drawing.Point(141, 35);
             this.txtNM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNM.Name = "txtNM";
             this.txtNM.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -216,7 +220,7 @@ namespace QLThuVien.GUI
             // txtNT
             // 
             this.txtNT.Enabled = false;
-            this.txtNT.Location = new System.Drawing.Point(266, 151);
+            this.txtNT.Location = new System.Drawing.Point(141, 66);
             this.txtNT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNT.Name = "txtNT";
             this.txtNT.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -230,8 +234,9 @@ namespace QLThuVien.GUI
             // 
             // txtTS
             // 
+            this.txtTS.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTS.Enabled = false;
-            this.txtTS.Location = new System.Drawing.Point(783, 44);
+            this.txtTS.Location = new System.Drawing.Point(125, 4);
             this.txtTS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTS.Name = "txtTS";
             this.txtTS.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -246,7 +251,7 @@ namespace QLThuVien.GUI
             // txtTT
             // 
             this.txtTT.Enabled = false;
-            this.txtTT.Location = new System.Drawing.Point(783, 97);
+            this.txtTT.Location = new System.Drawing.Point(125, 35);
             this.txtTT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTT.Name = "txtTT";
             this.txtTT.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -261,7 +266,7 @@ namespace QLThuVien.GUI
             // txtStatus
             // 
             this.txtStatus.Enabled = false;
-            this.txtStatus.Location = new System.Drawing.Point(783, 151);
+            this.txtStatus.Location = new System.Drawing.Point(125, 66);
             this.txtStatus.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Properties.Appearance.BackColor = System.Drawing.Color.White;
@@ -279,11 +284,11 @@ namespace QLThuVien.GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txt_search.Location = new System.Drawing.Point(217, 227);
+            this.txt_search.Location = new System.Drawing.Point(6, 4);
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(430, 42);
+            this.txt_search.Size = new System.Drawing.Size(939, 42);
             this.txt_search.TabIndex = 23;
             this.txt_search.Text = "Search";
             this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
@@ -295,9 +300,9 @@ namespace QLThuVien.GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(127, 50);
+            this.label1.Location = new System.Drawing.Point(2, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 22);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Mã cuốn sách";
             // 
@@ -307,11 +312,11 @@ namespace QLThuVien.GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 100);
+            this.label2.Location = new System.Drawing.Point(2, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(110, 22);
+            this.label2.Size = new System.Drawing.Size(100, 20);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Ngày mượn:";
+            this.label2.Text = "Ngày mượn";
             // 
             // label3
             // 
@@ -319,45 +324,46 @@ namespace QLThuVien.GUI
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(127, 154);
+            this.label3.Location = new System.Drawing.Point(2, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 22);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 26;
-            this.label3.Text = "Ngày trả:";
+            this.label3.Text = "Ngày trả";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(667, 47);
+            this.label4.Location = new System.Drawing.Point(9, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 22);
+            this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 27;
-            this.label4.Text = "Tựa sách:";
+            this.label4.Text = "Tựa sách";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(667, 100);
+            this.label5.Location = new System.Drawing.Point(9, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 22);
+            this.label5.Size = new System.Drawing.Size(72, 20);
             this.label5.TabIndex = 28;
-            this.label5.Text = "Thủ thư:";
+            this.label5.Text = "Thủ thư";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(667, 154);
+            this.label6.Location = new System.Drawing.Point(9, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(102, 22);
+            this.label6.Size = new System.Drawing.Size(91, 20);
             this.label6.TabIndex = 29;
-            this.label6.Text = "Tình trạng:";
+            this.label6.Text = "Tình trạng";
             // 
             // txt_cs
             // 
-            this.txt_cs.Location = new System.Drawing.Point(266, 47);
+            this.txt_cs.Location = new System.Drawing.Point(141, 4);
             this.txt_cs.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txt_cs.Name = "txt_cs";
             this.txt_cs.Properties.AdvancedModeOptions.SelectionColor = System.Drawing.Color.White;
@@ -371,41 +377,53 @@ namespace QLThuVien.GUI
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(102, 35);
+            this.panel1.Controls.Add(this.txt_cs);
+            this.panel1.Controls.Add(this.txtNM);
+            this.panel1.Controls.Add(this.txtNT);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Location = new System.Drawing.Point(51, 35);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 158);
+            this.panel1.Size = new System.Drawing.Size(481, 102);
             this.panel1.TabIndex = 30;
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Location = new System.Drawing.Point(658, 35);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.txtTS);
+            this.panel2.Controls.Add(this.txtTT);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.txtStatus);
+            this.panel2.Location = new System.Drawing.Point(538, 35);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(465, 158);
+            this.panel2.Size = new System.Drawing.Size(471, 102);
             this.panel2.TabIndex = 31;
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.txt_search);
+            this.panel3.Location = new System.Drawing.Point(51, 143);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(958, 51);
+            this.panel3.TabIndex = 32;
             // 
             // frm_PMDG
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txt_search);
-            this.Controls.Add(this.txtStatus);
-            this.Controls.Add(this.txtTT);
-            this.Controls.Add(this.txtTS);
-            this.Controls.Add(this.txtNT);
-            this.Controls.Add(this.txtNM);
             this.Controls.Add(this.gridControlPM);
-            this.Controls.Add(this.txt_cs);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel3);
             this.Name = "frm_PMDG";
-            this.Size = new System.Drawing.Size(1292, 798);
+            this.Size = new System.Drawing.Size(1049, 577);
             this.Load += new System.EventHandler(this.frm_PMDG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
@@ -416,8 +434,13 @@ namespace QLThuVien.GUI
             ((System.ComponentModel.ISupportInitialize)(this.txtStatus.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_cs.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -447,5 +470,6 @@ namespace QLThuVien.GUI
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
     }
 }

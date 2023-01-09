@@ -49,7 +49,7 @@ namespace QLThuVien.GUI
 
         private void gridView1_Click(object sender, EventArgs e)
         {
-            LoadData();
+           LoadData();
         }
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)

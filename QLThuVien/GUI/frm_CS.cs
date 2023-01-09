@@ -54,7 +54,7 @@ namespace QLThuVien.GUI
 
         private void gridView1_FocusedRowChanged(object sender, DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventArgs e)
         {
-            LoadData();
+             LoadData();
         }
 
         private void btn_TTTS_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace QLThuVien.GUI
         private void btn_delete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa hay không", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                BUS.Delete_CS(cs);
+               BUS.Delete_CS(cs);
         }
     }
 }

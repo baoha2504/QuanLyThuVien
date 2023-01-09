@@ -125,26 +125,28 @@ namespace QLThuVien.GUI
             {
                 if (string.IsNullOrEmpty(txt_MaTT.Text) && string.IsNullOrEmpty(txt_TenTT.Text) || string.IsNullOrEmpty(cmb_GT.Text)
                     || string.IsNullOrEmpty(txt_SDT.Text) || string.IsNullOrEmpty(txt_DC.Text) || string.IsNullOrEmpty(txt_CV.Text))
+                {
                     MessageBox.Show("Bạn phải nhập đầy đủ dữ liệu trước khi update!", "WARM", MessageBoxButtons.OKCancel);
+                }
                 else
                 {
                     if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-                    {
-                        DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
+                {
+                    DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
 
-                        string sql = "select *from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
-                        test = DataProvider.GetData(sql);
-                        int i = test.Rows.Count;
-                        if (i > 0)
-                            MessageBox.Show("Đã tồn tại " + txt_MaTT.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        else
-                        {
-                            gridControl1.DataSource = BUS.Insert_TT(tt2);
-                            MessageBox.Show("Đã lưu thành công");
-                            gridControl1.DataSource = BUS.Select_TT();
-                            LoadData();
-                        }
+                    string sql = "select * from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
+                    test = DataProvider.GetData(sql);
+                    int i = test.Rows.Count;
+                    if (i > 0)
+                        MessageBox.Show("Đã tồn tại "+txt_MaTT.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    else
+                    {
+                        gridControl1.DataSource = BUS.Insert_TT(tt2);
+                        MessageBox.Show("Đã lưu thành công");
+                        gridControl1.DataSource = BUS.Select_TT();
+                        LoadData();
                     }
+                }
                 }
                 
             }

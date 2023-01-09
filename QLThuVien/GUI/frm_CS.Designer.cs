@@ -33,6 +33,8 @@
             this.txt_TenTS = new DevExpress.XtraEditors.TextEdit();
             this.txt_MaCS = new DevExpress.XtraEditors.TextEdit();
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.lci_MaCS = new DevExpress.XtraLayout.LayoutControlItem();
+            this.lci_TenTS = new DevExpress.XtraLayout.LayoutControlItem();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -44,19 +46,17 @@
             this.btn_update = new DevExpress.XtraEditors.SimpleButton();
             this.btn_insert = new DevExpress.XtraEditors.SimpleButton();
             this.btn_TTTS = new DevExpress.XtraEditors.SimpleButton();
-            this.lci_MaCS = new DevExpress.XtraLayout.LayoutControlItem();
-            this.lci_TenTS = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaCS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_MaCS)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_TenTS)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).BeginInit();
             this.panelControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_MaCS)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_TenTS)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -73,23 +73,23 @@
             // 
             // txt_TenTS
             // 
-            this.txt_TenTS.Location = new System.Drawing.Point(136, 45);
+            this.txt_TenTS.Location = new System.Drawing.Point(143, 44);
             this.txt_TenTS.Margin = new System.Windows.Forms.Padding(4);
             this.txt_TenTS.Name = "txt_TenTS";
             this.txt_TenTS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenTS.Properties.Appearance.Options.UseFont = true;
-            this.txt_TenTS.Size = new System.Drawing.Size(591, 28);
+            this.txt_TenTS.Size = new System.Drawing.Size(585, 28);
             this.txt_TenTS.StyleController = this.layoutControl1;
             this.txt_TenTS.TabIndex = 5;
             // 
             // txt_MaCS
             // 
-            this.txt_MaCS.Location = new System.Drawing.Point(136, 13);
+            this.txt_MaCS.Location = new System.Drawing.Point(143, 12);
             this.txt_MaCS.Margin = new System.Windows.Forms.Padding(4);
             this.txt_MaCS.Name = "txt_MaCS";
             this.txt_MaCS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaCS.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaCS.Size = new System.Drawing.Size(591, 28);
+            this.txt_MaCS.Size = new System.Drawing.Size(585, 28);
             this.txt_MaCS.StyleController = this.layoutControl1;
             this.txt_MaCS.TabIndex = 4;
             // 
@@ -101,6 +101,28 @@
             this.layoutControlGroup1.Name = "layoutControlGroup1";
             this.layoutControlGroup1.Size = new System.Drawing.Size(740, 107);
             this.layoutControlGroup1.TextVisible = false;
+            // 
+            // lci_MaCS
+            // 
+            this.lci_MaCS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lci_MaCS.AppearanceItemCaption.Options.UseFont = true;
+            this.lci_MaCS.Control = this.txt_MaCS;
+            this.lci_MaCS.Location = new System.Drawing.Point(0, 0);
+            this.lci_MaCS.Name = "lci_MaCS";
+            this.lci_MaCS.Size = new System.Drawing.Size(720, 32);
+            this.lci_MaCS.Text = "Mã Cuốn sách";
+            this.lci_MaCS.TextSize = new System.Drawing.Size(119, 22);
+            // 
+            // lci_TenTS
+            // 
+            this.lci_TenTS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lci_TenTS.AppearanceItemCaption.Options.UseFont = true;
+            this.lci_TenTS.Control = this.txt_TenTS;
+            this.lci_TenTS.Location = new System.Drawing.Point(0, 32);
+            this.lci_TenTS.Name = "lci_TenTS";
+            this.lci_TenTS.Size = new System.Drawing.Size(720, 55);
+            this.lci_TenTS.Text = "Tên Tựa sách";
+            this.lci_TenTS.TextSize = new System.Drawing.Size(119, 22);
             // 
             // gridControl1
             // 
@@ -258,28 +280,6 @@
             this.btn_TTTS.Text = "Thông tin Tựa sách";
             this.btn_TTTS.Click += new System.EventHandler(this.btn_TTTS_Click);
             // 
-            // lci_MaCS
-            // 
-            this.lci_MaCS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lci_MaCS.AppearanceItemCaption.Options.UseFont = true;
-            this.lci_MaCS.Control = this.txt_MaCS;
-            this.lci_MaCS.Location = new System.Drawing.Point(0, 0);
-            this.lci_MaCS.Name = "lci_MaCS";
-            this.lci_MaCS.Size = new System.Drawing.Size(718, 32);
-            this.lci_MaCS.Text = "Mã Cuốn sách";
-            this.lci_MaCS.TextSize = new System.Drawing.Size(119, 22);
-            // 
-            // lci_TenTS
-            // 
-            this.lci_TenTS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lci_TenTS.AppearanceItemCaption.Options.UseFont = true;
-            this.lci_TenTS.Control = this.txt_TenTS;
-            this.lci_TenTS.Location = new System.Drawing.Point(0, 32);
-            this.lci_TenTS.Name = "lci_TenTS";
-            this.lci_TenTS.Size = new System.Drawing.Size(718, 53);
-            this.lci_TenTS.Text = "Tên Tựa sách";
-            this.lci_TenTS.TextSize = new System.Drawing.Size(119, 22);
-            // 
             // frm_CS
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
@@ -299,13 +299,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaCS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_MaCS)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lci_TenTS)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.panelControl1)).EndInit();
             this.panelControl1.ResumeLayout(false);
             this.panelControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_MaCS)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lci_TenTS)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -326,8 +326,8 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraEditors.TextEdit txt_TenTS;
         private DevExpress.XtraEditors.TextEdit txt_MaCS;
-        private DevExpress.XtraEditors.SimpleButton btn_TTTS;
         private DevExpress.XtraLayout.LayoutControlItem lci_MaCS;
         private DevExpress.XtraLayout.LayoutControlItem lci_TenTS;
+        private DevExpress.XtraEditors.SimpleButton btn_TTTS;
     }
 }

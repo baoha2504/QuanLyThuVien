@@ -186,6 +186,12 @@
     <Compile Include="GUI\frm_DoiMK.Designer.cs">
       <DependentUpon>frm_DoiMK.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_DSViPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DSViPham.Designer.cs">
+      <DependentUpon>frm_DSViPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_GT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -197,6 +203,12 @@
     </Compile>
     <Compile Include="GUI\frm_KS.Designer.cs">
       <DependentUpon>frm_KS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_LSViPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_LSViPham.Designer.cs">
+      <DependentUpon>frm_LSViPham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_NCC.cs">
       <SubType>UserControl</SubType>
@@ -263,6 +275,12 @@
     </Compile>
     <Compile Include="GUI\frm_TKNS_TT.Designer.cs">
       <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TraSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TraSach.Designer.cs">
+      <DependentUpon>frm_TraSach.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_TS.cs">
       <SubType>UserControl</SubType>
@@ -345,11 +363,17 @@
     <EmbeddedResource Include="GUI\frm_DoiMK.resx">
       <DependentUpon>frm_DoiMK.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DSViPham.resx">
+      <DependentUpon>frm_DSViPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_GT.resx">
       <DependentUpon>frm_GT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_KS.resx">
       <DependentUpon>frm_KS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_LSViPham.resx">
+      <DependentUpon>frm_LSViPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_NCC.resx">
       <DependentUpon>frm_NCC.cs</DependentUpon>
@@ -383,6 +407,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TKNS_TT.resx">
       <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TraSach.resx">
+      <DependentUpon>frm_TraSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TS.resx">
       <DependentUpon>frm_TS.cs</DependentUpon>
