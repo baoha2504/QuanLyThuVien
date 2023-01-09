@@ -123,11 +123,18 @@ namespace QLThuVien.GUI
 
             if (insert)
             {
-                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (string.IsNullOrEmpty(txt_MaTT.Text) && string.IsNullOrEmpty(txt_TenTT.Text) || string.IsNullOrEmpty(cmb_GT.Text)
+                    || string.IsNullOrEmpty(txt_SDT.Text) || string.IsNullOrEmpty(txt_DC.Text) || string.IsNullOrEmpty(txt_CV.Text))
+                {
+                    MessageBox.Show("Bạn phải nhập đầy đủ dữ liệu trước khi update!", "WARM", MessageBoxButtons.OKCancel);
+                }
+                else
+                {
+                    if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
 
-                    string sql = "select *from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
+                    string sql = "select * from ThuThu where MaTT= '" + txt_MaTT.Text + "'";
                     test = DataProvider.GetData(sql);
                     int i = test.Rows.Count;
                     if (i > 0)
@@ -140,6 +147,8 @@ namespace QLThuVien.GUI
                         LoadData();
                     }
                 }
+                }
+                
             }
             if (update)
             {

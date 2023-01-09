@@ -11,7 +11,7 @@ namespace QLThuVien.DataAccessLayer
     class DataProvider
     {
         private static SqlConnection conn;
-       
+        public static string connectionStr= @"Data Source=.\SQLEXPRESS;Initial Catalog=QuanLyThuVien;Integrated Security=True";
 
         //tao ket noi vs sql
         public static SqlConnection Connect()
@@ -82,7 +82,7 @@ namespace QLThuVien.DataAccessLayer
                 SqlCommand sqlDa = new SqlCommand(query, conn);
                 sqlDa.ExecuteNonQuery();
 
-                int val = sqlDa.ExecuteNonQuery();
+                //int val = sqlDa.ExecuteNonQuery();
                 conn.Close();
             }
             catch (SqlException)

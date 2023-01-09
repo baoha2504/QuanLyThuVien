@@ -35,8 +35,7 @@
             this.btnTrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnThongBao = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.MuonTra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnSachDaMuon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnSachDaTra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnPhieuMuon = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnThongKe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Sach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnCuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -116,34 +115,30 @@
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongBao.Text = "Thông báo";
+            this.btnThongBao.Click += new System.EventHandler(this.btnThongBao_Click);
             // 
             // MuonTra
             // 
             this.MuonTra.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnSachDaMuon,
-            this.btnSachDaTra,
+            this.btnPhieuMuon,
             this.btnThongKe});
             this.MuonTra.Expanded = true;
             this.MuonTra.Name = "MuonTra";
             this.MuonTra.Text = "Mượn trả";
             // 
-            // btnSachDaMuon
+            // btnPhieuMuon
             // 
-            this.btnSachDaMuon.Name = "btnSachDaMuon";
-            this.btnSachDaMuon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnSachDaMuon.Text = "Sách đã mượn";
-            // 
-            // btnSachDaTra
-            // 
-            this.btnSachDaTra.Name = "btnSachDaTra";
-            this.btnSachDaTra.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnSachDaTra.Text = "Sách đã trả";
+            this.btnPhieuMuon.Name = "btnPhieuMuon";
+            this.btnPhieuMuon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnPhieuMuon.Text = "Phiếu mượn";
+            this.btnPhieuMuon.Click += new System.EventHandler(this.btnPhieuMuon_Click);
             // 
             // btnThongKe
             // 
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // Sach
             // 
@@ -361,8 +356,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement TaiKhoan;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTrangChu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnThongBao;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnSachDaMuon;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnSachDaTra;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnPhieuMuon;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnThongKe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTuaSach;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTacGia;
