@@ -97,13 +97,20 @@ namespace QLThuVien
                 {
                     foreach (DataRow dr in log2.Rows)
                     {
-                        name = dr["TenDG"].ToString();
-                        id = dr["MaDG"].ToString();
+                        if (dr["HoatDong"].ToString() == "1")
+                        {
+                            name = dr["TenDG"].ToString();
+                            id = dr["MaDG"].ToString();
+                            quyen = "DocGia";
+                            this.Hide();
+                            frmDocGia frmDocGia = new frmDocGia();
+                            frmDocGia.Show();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Tài khoản của bạn đã bị khóa", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
-                    quyen = "DocGia";
-                    this.Hide();
-                    frmDocGia frmDocGia = new frmDocGia();
-                    frmDocGia.Show();
                 }
                 else
                 {

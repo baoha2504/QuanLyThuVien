@@ -115,6 +115,7 @@
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongBao.Text = "Thông báo";
+            this.btnThongBao.Click += new System.EventHandler(this.btnThongBao_Click);
             // 
             // MuonTra
             // 
@@ -130,12 +131,14 @@
             this.btnPhieuMuon.Name = "btnPhieuMuon";
             this.btnPhieuMuon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnPhieuMuon.Text = "Phiếu mượn";
+            this.btnPhieuMuon.Click += new System.EventHandler(this.btnPhieuMuon_Click);
             // 
             // btnThongKe
             // 
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongKe.Text = "Thống kê";
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // Sach
             // 
