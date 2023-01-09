@@ -21,7 +21,7 @@ namespace QLThuVien.GUI
 
         private void frm_QuyDinh_Load(object sender, EventArgs e)
         {
-            string a = File.ReadAllText("C:\\Users\\DELL\\Desktop\\code\\QuanLyThuVien\\QLThuVien\\QuyDinh.txt");
+            string a = File.ReadAllText("D:\\QuanLyThuVien\\QLThuVien\\QuyDinh.txt");
             txtNoiDung.Text = a;
         }
     }
