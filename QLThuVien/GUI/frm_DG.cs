@@ -116,10 +116,10 @@ namespace QLThuVien.GUI
             {
                 if (string.IsNullOrEmpty(txt_MaDG.Text) && string.IsNullOrEmpty(txt_TenDG.Text) || string.IsNullOrEmpty(cmb_GT.Text)
                     || string.IsNullOrEmpty(txt_SDT.Text) || string.IsNullOrEmpty(txt_DC.Text))
-                    MessageBox.Show("Bạn phải nhập đầy đủ dữ liệu trước khi cập nhật!", "WARM", MessageBoxButtons.OKCancel);
+                    MessageBox.Show("Bạn phải nhập đầy đủ dữ liệu trước khi update!", "WARM", MessageBoxButtons.OKCancel);
                 else
                 {
-                    if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không?", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                    if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                     {
                         DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
 
@@ -127,7 +127,7 @@ namespace QLThuVien.GUI
                         test = DataProvider.GetData(sql);
                         int i = test.Rows.Count;
                         if (i > 0)
-                            MessageBox.Show("Đã tồn tại " + txt_MaDG.Text, "Error!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            MessageBox.Show("Đã tồn tại " + txt_MaDG.Text, "Error !!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         else
                         {
                             gridControl1.DataSource = BUS.Insert_DG(dg2);
@@ -136,7 +136,7 @@ namespace QLThuVien.GUI
                             LoadData();
                         }
                     }
-                } 
+                }       
             }
             if (update)
             {
