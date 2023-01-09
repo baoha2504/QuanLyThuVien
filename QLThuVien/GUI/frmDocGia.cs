@@ -48,7 +48,7 @@ namespace QLThuVien.GUI
                 frm_GT.BringToFront();
             }
             lblTieuDe.Caption = "Trang chủ";
-        }
+        }   
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
