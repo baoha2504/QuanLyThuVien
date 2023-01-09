@@ -284,7 +284,7 @@
             // txtMaViTri
             // 
             this.txtMaViTri.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaViTri.Location = new System.Drawing.Point(162, 32);
+            this.txtMaViTri.Location = new System.Drawing.Point(161, 32);
             this.txtMaViTri.Multiline = true;
             this.txtMaViTri.Name = "txtMaViTri";
             this.txtMaViTri.Size = new System.Drawing.Size(315, 32);
@@ -294,7 +294,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(47, 35);
+            this.label1.Location = new System.Drawing.Point(46, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 23);
             this.label1.TabIndex = 11;
@@ -315,7 +315,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(47, 68);
+            this.label3.Location = new System.Drawing.Point(46, 68);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 23);
             this.label3.TabIndex = 13;
@@ -385,7 +385,7 @@
             // txtDiaChi
             // 
             this.txtDiaChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDiaChi.Location = new System.Drawing.Point(162, 68);
+            this.txtDiaChi.Location = new System.Drawing.Point(161, 68);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(315, 100);
