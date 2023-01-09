@@ -90,6 +90,7 @@
             this.txt_user.Size = new System.Drawing.Size(280, 35);
             this.txt_user.TabIndex = 3;
             this.txt_user.Text = "TT001";
+            this.txt_user.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_user_KeyDown);
             // 
             // txt_pass
             // 

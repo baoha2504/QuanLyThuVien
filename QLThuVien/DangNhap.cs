@@ -131,5 +131,13 @@ namespace QLThuVien
             
             else txt_pass.UseSystemPasswordChar = true;
         }
+
+        private void txt_user_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_Log_Click(sender, e);
+            }
+        }
     }
 }
