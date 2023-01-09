@@ -32,6 +32,7 @@ namespace QLThuVien.GUI
             btnTrangChu_Click(sender, e);
             lblName.Caption = DangNhap.name;
             lblTime.Caption = DateTime.Now.ToString("dd/MM/yyyy");
+            //btnThongKe.Visible = false;
         }
 
         private void btnTrangChu_Click(object sender, EventArgs e)
