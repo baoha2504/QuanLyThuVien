@@ -130,7 +130,7 @@ namespace QLThuVien.GUI
                     if (i > 0)
                     {
                         BUS.Insert_CTM(ctm);
-                        MessageBox.Show("Đã thêm chi tiết mượn vào  " + txt_MaPM.Text, "Thông Báo !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Đã thêm chi tiết mượn vào " + txt_MaPM.Text, "Thông Báo !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gridControl1.DataSource = BUS.Select_PM();
                         LoadData();
                         query = "UPDATE TuaSach SET SoLuong = SoLuong - 1 WHERE TenTS = N'" + cmb_TenTS.Text + "'";

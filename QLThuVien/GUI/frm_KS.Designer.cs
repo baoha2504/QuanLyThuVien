@@ -77,54 +77,59 @@
             this.layoutControl1.Controls.Add(this.txt_SC);
             this.layoutControl1.Controls.Add(this.txt_CL);
             this.layoutControl1.Controls.Add(this.txt_MaKe);
-            this.layoutControl1.Location = new System.Drawing.Point(24, 15);
+            this.layoutControl1.Location = new System.Drawing.Point(36, 22);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(848, 139);
+            this.layoutControl1.Size = new System.Drawing.Size(1272, 203);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // txt_SL
             // 
             this.txt_SL.Enabled = false;
-            this.txt_SL.Location = new System.Drawing.Point(519, 40);
+            this.txt_SL.Location = new System.Drawing.Point(784, 56);
+            this.txt_SL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_SL.Name = "txt_SL";
             this.txt_SL.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SL.Properties.Appearance.Options.UseFont = true;
-            this.txt_SL.Size = new System.Drawing.Size(317, 24);
+            this.txt_SL.Size = new System.Drawing.Size(470, 32);
             this.txt_SL.StyleController = this.layoutControl1;
             this.txt_SL.TabIndex = 7;
             this.txt_SL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SL_KeyPress);
             // 
             // txt_SC
             // 
-            this.txt_SC.Location = new System.Drawing.Point(105, 40);
+            this.txt_SC.Location = new System.Drawing.Point(163, 56);
+            this.txt_SC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_SC.Name = "txt_SC";
             this.txt_SC.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SC.Properties.Appearance.Options.UseFont = true;
-            this.txt_SC.Size = new System.Drawing.Size(317, 24);
+            this.txt_SC.Size = new System.Drawing.Size(470, 32);
             this.txt_SC.StyleController = this.layoutControl1;
             this.txt_SC.TabIndex = 6;
             this.txt_SC.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SC_KeyPress);
             // 
             // txt_CL
             // 
-            this.txt_CL.Location = new System.Drawing.Point(519, 12);
+            this.txt_CL.Location = new System.Drawing.Point(784, 18);
+            this.txt_CL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_CL.Name = "txt_CL";
             this.txt_CL.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CL.Properties.Appearance.Options.UseFont = true;
-            this.txt_CL.Size = new System.Drawing.Size(317, 24);
+            this.txt_CL.Size = new System.Drawing.Size(470, 32);
             this.txt_CL.StyleController = this.layoutControl1;
             this.txt_CL.TabIndex = 5;
             // 
             // txt_MaKe
             // 
             this.txt_MaKe.Enabled = false;
-            this.txt_MaKe.Location = new System.Drawing.Point(105, 12);
+            this.txt_MaKe.Location = new System.Drawing.Point(163, 18);
+            this.txt_MaKe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MaKe.Name = "txt_MaKe";
             this.txt_MaKe.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaKe.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaKe.Size = new System.Drawing.Size(317, 24);
+            this.txt_MaKe.Size = new System.Drawing.Size(470, 32);
             this.txt_MaKe.StyleController = this.layoutControl1;
             this.txt_MaKe.TabIndex = 4;
             // 
@@ -137,9 +142,8 @@
             this.lci_SC,
             this.lci_CL,
             this.lci_SL});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(848, 139);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1272, 203);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // lci_MaKe
@@ -149,42 +153,42 @@
             this.lci_MaKe.Control = this.txt_MaKe;
             this.lci_MaKe.Location = new System.Drawing.Point(0, 0);
             this.lci_MaKe.Name = "lci_MaKe";
-            this.lci_MaKe.Size = new System.Drawing.Size(414, 28);
+            this.lci_MaKe.Size = new System.Drawing.Size(621, 38);
             this.lci_MaKe.Text = "Mã Kệ sách";
-            this.lci_MaKe.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_MaKe.TextSize = new System.Drawing.Size(139, 25);
             // 
             // lci_SC
             // 
             this.lci_SC.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_SC.AppearanceItemCaption.Options.UseFont = true;
             this.lci_SC.Control = this.txt_SC;
-            this.lci_SC.Location = new System.Drawing.Point(0, 28);
+            this.lci_SC.Location = new System.Drawing.Point(0, 38);
             this.lci_SC.Name = "lci_SC";
-            this.lci_SC.Size = new System.Drawing.Size(414, 91);
+            this.lci_SC.Size = new System.Drawing.Size(621, 135);
             this.lci_SC.Text = "Sức Chứa";
-            this.lci_SC.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_SC.TextSize = new System.Drawing.Size(139, 25);
             // 
             // lci_CL
             // 
             this.lci_CL.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_CL.AppearanceItemCaption.Options.UseFont = true;
             this.lci_CL.Control = this.txt_CL;
-            this.lci_CL.Location = new System.Drawing.Point(414, 0);
+            this.lci_CL.Location = new System.Drawing.Point(621, 0);
             this.lci_CL.Name = "lci_CL";
-            this.lci_CL.Size = new System.Drawing.Size(414, 28);
+            this.lci_CL.Size = new System.Drawing.Size(621, 38);
             this.lci_CL.Text = "Chất liệu";
-            this.lci_CL.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_CL.TextSize = new System.Drawing.Size(139, 25);
             // 
             // lci_SL
             // 
             this.lci_SL.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_SL.AppearanceItemCaption.Options.UseFont = true;
             this.lci_SL.Control = this.txt_SL;
-            this.lci_SL.Location = new System.Drawing.Point(414, 28);
+            this.lci_SL.Location = new System.Drawing.Point(621, 38);
             this.lci_SL.Name = "lci_SL";
-            this.lci_SL.Size = new System.Drawing.Size(414, 91);
+            this.lci_SL.Size = new System.Drawing.Size(621, 135);
             this.lci_SL.Text = "Số lượng sách";
-            this.lci_SL.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_SL.TextSize = new System.Drawing.Size(139, 25);
             // 
             // panelControl1
             // 
@@ -198,19 +202,21 @@
             this.panelControl1.Controls.Add(this.btn_delete);
             this.panelControl1.Controls.Add(this.btn_update);
             this.panelControl1.Controls.Add(this.btn_insert);
-            this.panelControl1.Location = new System.Drawing.Point(35, 160);
+            this.panelControl1.Location = new System.Drawing.Point(52, 234);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(825, 59);
+            this.panelControl1.Size = new System.Drawing.Size(1238, 86);
             this.panelControl1.TabIndex = 6;
             // 
             // btn_cancel
             // 
             this.btn_cancel.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.Appearance.Options.UseFont = true;
-            this.btn_cancel.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.Image")));
-            this.btn_cancel.Location = new System.Drawing.Point(426, 12);
+            this.btn_cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.ImageOptions.Image")));
+            this.btn_cancel.Location = new System.Drawing.Point(639, 18);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(100, 35);
+            this.btn_cancel.Size = new System.Drawing.Size(150, 51);
             this.btn_cancel.TabIndex = 20;
             this.btn_cancel.Text = "CANCEL";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -221,10 +227,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txt_search.Location = new System.Drawing.Point(532, 12);
+            this.txt_search.Location = new System.Drawing.Point(798, 18);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(274, 35);
+            this.txt_search.Size = new System.Drawing.Size(415, 49);
             this.txt_search.TabIndex = 17;
             this.txt_search.Text = "Search";
             this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
@@ -234,10 +241,11 @@
             // 
             this.btn_save.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Appearance.Options.UseFont = true;
-            this.btn_save.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.Image")));
-            this.btn_save.Location = new System.Drawing.Point(320, 12);
+            this.btn_save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
+            this.btn_save.Location = new System.Drawing.Point(480, 18);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(100, 35);
+            this.btn_save.Size = new System.Drawing.Size(150, 51);
             this.btn_save.TabIndex = 15;
             this.btn_save.Text = "SAVE";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
@@ -246,10 +254,11 @@
             // 
             this.btn_delete.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.Appearance.Options.UseFont = true;
-            this.btn_delete.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(214, 12);
+            this.btn_delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
+            this.btn_delete.Location = new System.Drawing.Point(321, 18);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(100, 35);
+            this.btn_delete.Size = new System.Drawing.Size(150, 51);
             this.btn_delete.TabIndex = 14;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
@@ -258,10 +267,11 @@
             // 
             this.btn_update.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.Appearance.Options.UseFont = true;
-            this.btn_update.Image = ((System.Drawing.Image)(resources.GetObject("btn_update.Image")));
-            this.btn_update.Location = new System.Drawing.Point(108, 12);
+            this.btn_update.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_update.ImageOptions.Image")));
+            this.btn_update.Location = new System.Drawing.Point(162, 18);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(100, 35);
+            this.btn_update.Size = new System.Drawing.Size(150, 51);
             this.btn_update.TabIndex = 13;
             this.btn_update.Text = "UPDATE";
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
@@ -270,10 +280,11 @@
             // 
             this.btn_insert.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_insert.Appearance.Options.UseFont = true;
-            this.btn_insert.Image = ((System.Drawing.Image)(resources.GetObject("btn_insert.Image")));
-            this.btn_insert.Location = new System.Drawing.Point(2, 12);
+            this.btn_insert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_insert.ImageOptions.Image")));
+            this.btn_insert.Location = new System.Drawing.Point(3, 18);
+            this.btn_insert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(100, 35);
+            this.btn_insert.Size = new System.Drawing.Size(150, 51);
             this.btn_insert.TabIndex = 12;
             this.btn_insert.Text = "INSERT";
             this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
@@ -283,10 +294,12 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.Location = new System.Drawing.Point(35, 225);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl1.Location = new System.Drawing.Point(52, 329);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(825, 222);
+            this.gridControl1.Size = new System.Drawing.Size(1238, 324);
             this.gridControl1.TabIndex = 7;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -298,6 +311,7 @@
             this.gridColumn2,
             this.gridColumn3,
             this.gridColumn4});
+            this.gridView1.DetailHeight = 512;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -314,9 +328,11 @@
             this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.Caption = "Mã kệ sách";
             this.gridColumn1.FieldName = "MaKe";
+            this.gridColumn1.MinWidth = 30;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 112;
             // 
             // gridColumn2
             // 
@@ -326,9 +342,11 @@
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.Caption = "Chất Liệu";
             this.gridColumn2.FieldName = "ChatLieu";
+            this.gridColumn2.MinWidth = 30;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 112;
             // 
             // gridColumn3
             // 
@@ -338,9 +356,11 @@
             this.gridColumn3.AppearanceHeader.Options.UseFont = true;
             this.gridColumn3.Caption = "Sức chứa";
             this.gridColumn3.FieldName = "SucChua";
+            this.gridColumn3.MinWidth = 30;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 112;
             // 
             // gridColumn4
             // 
@@ -350,23 +370,26 @@
             this.gridColumn4.AppearanceHeader.Options.UseFont = true;
             this.gridColumn4.Caption = "Số lượng sách";
             this.gridColumn4.FieldName = "SL";
+            this.gridColumn4.MinWidth = 30;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
             new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SL", "Tổng={0:0.##}")});
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 112;
             // 
             // frm_KS
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.layoutControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_KS";
-            this.Size = new System.Drawing.Size(900, 450);
+            this.Size = new System.Drawing.Size(1350, 658);
             this.Load += new System.EventHandler(this.frm_KS_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
