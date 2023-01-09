@@ -58,7 +58,6 @@ namespace QLThuVien.GUI
             {
                 connect();
             }
-            
         }
 
         private void txt_search_MouseClick(object sender, MouseEventArgs e)

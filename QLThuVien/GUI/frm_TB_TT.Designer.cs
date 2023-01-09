@@ -134,7 +134,7 @@ namespace QLThuVien.GUI
             this.textBox2.Location = new System.Drawing.Point(465, 530);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(287, 26);
+            this.textBox2.Size = new System.Drawing.Size(297, 26);
             this.textBox2.TabIndex = 13;
             // 
             // textBox3
@@ -145,7 +145,7 @@ namespace QLThuVien.GUI
             this.textBox3.Location = new System.Drawing.Point(465, 435);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(287, 26);
+            this.textBox3.Size = new System.Drawing.Size(297, 26);
             this.textBox3.TabIndex = 14;
             // 
             // textBox4
@@ -156,7 +156,7 @@ namespace QLThuVien.GUI
             this.textBox4.Location = new System.Drawing.Point(465, 334);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(287, 26);
+            this.textBox4.Size = new System.Drawing.Size(297, 26);
             this.textBox4.TabIndex = 15;
             // 
             // textBox5
@@ -167,7 +167,7 @@ namespace QLThuVien.GUI
             this.textBox5.Location = new System.Drawing.Point(465, 222);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(287, 26);
+            this.textBox5.Size = new System.Drawing.Size(297, 26);
             this.textBox5.TabIndex = 16;
             // 
             // textBox6
@@ -178,7 +178,7 @@ namespace QLThuVien.GUI
             this.textBox6.Location = new System.Drawing.Point(465, 117);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(287, 26);
+            this.textBox6.Size = new System.Drawing.Size(297, 26);
             this.textBox6.TabIndex = 17;
             // 
             // frm_TB_TT
