@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.txt_NS = new DevExpress.XtraEditors.DateEdit();
             this.txt_SDT = new DevExpress.XtraEditors.TextEdit();
             this.txt_DC = new DevExpress.XtraEditors.TextEdit();
@@ -37,6 +36,7 @@
             this.txt_TenTT = new DevExpress.XtraEditors.TextEdit();
             this.txt_MaTT = new DevExpress.XtraEditors.TextEdit();
             this.txt_CV = new DevExpress.XtraEditors.TextEdit();
+            this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.lbl_MaTT = new DevExpress.XtraLayout.LayoutControlItem();
             this.lbl_TenTT = new DevExpress.XtraLayout.LayoutControlItem();
             this.lbl_GT = new DevExpress.XtraLayout.LayoutControlItem();
@@ -46,7 +46,6 @@
             this.lbl_CV1 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_SDT.Properties)).BeginInit();
@@ -55,6 +54,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaTT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CV.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_MaTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_TenTT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_GT)).BeginInit();
@@ -80,22 +80,6 @@
             this.layoutControl1.Size = new System.Drawing.Size(583, 295);
             this.layoutControl1.TabIndex = 1;
             this.layoutControl1.Text = "layoutControl1";
-            // 
-            // layoutControlGroup1
-            // 
-            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.layoutControlGroup1.GroupBordersVisible = false;
-            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.lbl_MaTT,
-            this.lbl_TenTT,
-            this.lbl_GT,
-            this.lbl_DC,
-            this.lbl_SDT,
-            this.lbl_NS,
-            this.lbl_CV1});
-            this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(583, 295);
-            this.layoutControlGroup1.TextVisible = false;
             // 
             // txt_NS
             // 
@@ -178,6 +162,22 @@
             this.txt_CV.Size = new System.Drawing.Size(464, 28);
             this.txt_CV.StyleController = this.layoutControl1;
             this.txt_CV.TabIndex = 10;
+            // 
+            // layoutControlGroup1
+            // 
+            this.layoutControlGroup1.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
+            this.layoutControlGroup1.GroupBordersVisible = false;
+            this.layoutControlGroup1.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.lbl_MaTT,
+            this.lbl_TenTT,
+            this.lbl_GT,
+            this.lbl_DC,
+            this.lbl_SDT,
+            this.lbl_NS,
+            this.lbl_CV1});
+            this.layoutControlGroup1.Name = "Root";
+            this.layoutControlGroup1.Size = new System.Drawing.Size(583, 295);
+            this.layoutControlGroup1.TextVisible = false;
             // 
             // lbl_MaTT
             // 
@@ -262,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 287);
+            this.ClientSize = new System.Drawing.Size(586, 306);
             this.Controls.Add(this.layoutControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_TTTT";
@@ -270,7 +270,6 @@
             this.Load += new System.EventHandler(this.frm_TTTT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_NS.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_SDT.Properties)).EndInit();
@@ -279,6 +278,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.txt_TenTT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_MaTT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_CV.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_MaTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_TenTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lbl_GT)).EndInit();
