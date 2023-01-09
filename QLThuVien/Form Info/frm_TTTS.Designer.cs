@@ -84,100 +84,110 @@
             this.layoutControl1.Controls.Add(this.txt_TL);
             this.layoutControl1.Controls.Add(this.txt_TenTS);
             this.layoutControl1.Controls.Add(this.txt_MaTS);
-            this.layoutControl1.Location = new System.Drawing.Point(12, 6);
+            this.layoutControl1.Location = new System.Drawing.Point(14, 7);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(534, 195);
+            this.layoutControl1.Size = new System.Drawing.Size(623, 240);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // txt_SL
             // 
-            this.txt_SL.Location = new System.Drawing.Point(424, 152);
+            this.txt_SL.Location = new System.Drawing.Point(506, 174);
+            this.txt_SL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_SL.Name = "txt_SL";
             this.txt_SL.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SL.Properties.Appearance.Options.UseFont = true;
-            this.txt_SL.Size = new System.Drawing.Size(98, 24);
+            this.txt_SL.Size = new System.Drawing.Size(103, 28);
             this.txt_SL.StyleController = this.layoutControl1;
             this.txt_SL.TabIndex = 12;
             // 
             // txt_VT
             // 
-            this.txt_VT.Location = new System.Drawing.Point(105, 96);
+            this.txt_VT.Location = new System.Drawing.Point(134, 110);
+            this.txt_VT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_VT.Name = "txt_VT";
             this.txt_VT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_VT.Properties.Appearance.Options.UseFont = true;
-            this.txt_VT.Size = new System.Drawing.Size(222, 24);
+            this.txt_VT.Size = new System.Drawing.Size(248, 28);
             this.txt_VT.StyleController = this.layoutControl1;
             this.txt_VT.TabIndex = 11;
             // 
             // txt_NXB
             // 
-            this.txt_NXB.Location = new System.Drawing.Point(105, 152);
+            this.txt_NXB.Location = new System.Drawing.Point(134, 174);
+            this.txt_NXB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_NXB.Name = "txt_NXB";
             this.txt_NXB.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_NXB.Properties.Appearance.Options.UseFont = true;
-            this.txt_NXB.Size = new System.Drawing.Size(222, 24);
+            this.txt_NXB.Size = new System.Drawing.Size(248, 28);
             this.txt_NXB.StyleController = this.layoutControl1;
             this.txt_NXB.TabIndex = 10;
             // 
             // txt_TG
             // 
-            this.txt_TG.Location = new System.Drawing.Point(105, 124);
+            this.txt_TG.Location = new System.Drawing.Point(134, 142);
+            this.txt_TG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TG.Name = "txt_TG";
             this.txt_TG.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TG.Properties.Appearance.Options.UseFont = true;
-            this.txt_TG.Size = new System.Drawing.Size(417, 24);
+            this.txt_TG.Size = new System.Drawing.Size(475, 28);
             this.txt_TG.StyleController = this.layoutControl1;
             this.txt_TG.TabIndex = 9;
             // 
             // txt_ST
             // 
-            this.txt_ST.Location = new System.Drawing.Point(424, 96);
+            this.txt_ST.Location = new System.Drawing.Point(506, 110);
+            this.txt_ST.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_ST.Name = "txt_ST";
             this.txt_ST.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ST.Properties.Appearance.Options.UseFont = true;
-            this.txt_ST.Size = new System.Drawing.Size(98, 24);
+            this.txt_ST.Size = new System.Drawing.Size(103, 28);
             this.txt_ST.StyleController = this.layoutControl1;
             this.txt_ST.TabIndex = 8;
             // 
             // txt_XB
             // 
-            this.txt_XB.Location = new System.Drawing.Point(424, 68);
+            this.txt_XB.Location = new System.Drawing.Point(506, 78);
+            this.txt_XB.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_XB.Name = "txt_XB";
             this.txt_XB.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_XB.Properties.Appearance.Options.UseFont = true;
-            this.txt_XB.Size = new System.Drawing.Size(98, 24);
+            this.txt_XB.Size = new System.Drawing.Size(103, 28);
             this.txt_XB.StyleController = this.layoutControl1;
             this.txt_XB.TabIndex = 7;
             // 
             // txt_TL
             // 
-            this.txt_TL.Location = new System.Drawing.Point(105, 68);
+            this.txt_TL.Location = new System.Drawing.Point(134, 78);
+            this.txt_TL.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TL.Name = "txt_TL";
             this.txt_TL.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TL.Properties.Appearance.Options.UseFont = true;
-            this.txt_TL.Size = new System.Drawing.Size(222, 24);
+            this.txt_TL.Size = new System.Drawing.Size(248, 28);
             this.txt_TL.StyleController = this.layoutControl1;
             this.txt_TL.TabIndex = 6;
             // 
             // txt_TenTS
             // 
-            this.txt_TenTS.Location = new System.Drawing.Point(105, 40);
+            this.txt_TenTS.Location = new System.Drawing.Point(134, 46);
+            this.txt_TenTS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TenTS.Name = "txt_TenTS";
             this.txt_TenTS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenTS.Properties.Appearance.Options.UseFont = true;
-            this.txt_TenTS.Size = new System.Drawing.Size(417, 24);
+            this.txt_TenTS.Size = new System.Drawing.Size(475, 28);
             this.txt_TenTS.StyleController = this.layoutControl1;
             this.txt_TenTS.TabIndex = 5;
             // 
             // txt_MaTS
             // 
-            this.txt_MaTS.Location = new System.Drawing.Point(105, 12);
+            this.txt_MaTS.Location = new System.Drawing.Point(134, 14);
+            this.txt_MaTS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MaTS.Name = "txt_MaTS";
             this.txt_MaTS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaTS.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaTS.Size = new System.Drawing.Size(417, 24);
+            this.txt_MaTS.Size = new System.Drawing.Size(475, 28);
             this.txt_MaTS.StyleController = this.layoutControl1;
             this.txt_MaTS.TabIndex = 4;
             // 
@@ -195,9 +205,8 @@
             this.lci_VT,
             this.lci_SL,
             this.lci_NXB});
-            this.layoutControlGroup1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(534, 195);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(623, 240);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // lci_MaTS
@@ -207,104 +216,105 @@
             this.lci_MaTS.Control = this.txt_MaTS;
             this.lci_MaTS.Location = new System.Drawing.Point(0, 0);
             this.lci_MaTS.Name = "lci_MaTS";
-            this.lci_MaTS.Size = new System.Drawing.Size(514, 28);
+            this.lci_MaTS.Size = new System.Drawing.Size(599, 32);
             this.lci_MaTS.Text = "Mã tựa sách";
-            this.lci_MaTS.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_MaTS.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_TenTS
             // 
             this.lci_TenTS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_TenTS.AppearanceItemCaption.Options.UseFont = true;
             this.lci_TenTS.Control = this.txt_TenTS;
-            this.lci_TenTS.Location = new System.Drawing.Point(0, 28);
+            this.lci_TenTS.Location = new System.Drawing.Point(0, 32);
             this.lci_TenTS.Name = "lci_TenTS";
-            this.lci_TenTS.Size = new System.Drawing.Size(514, 28);
+            this.lci_TenTS.Size = new System.Drawing.Size(599, 32);
             this.lci_TenTS.Text = "Tên tựa sách";
-            this.lci_TenTS.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_TenTS.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_TL
             // 
             this.lci_TL.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_TL.AppearanceItemCaption.Options.UseFont = true;
             this.lci_TL.Control = this.txt_TL;
-            this.lci_TL.Location = new System.Drawing.Point(0, 56);
+            this.lci_TL.Location = new System.Drawing.Point(0, 64);
             this.lci_TL.Name = "lci_TL";
-            this.lci_TL.Size = new System.Drawing.Size(319, 28);
+            this.lci_TL.Size = new System.Drawing.Size(372, 32);
             this.lci_TL.Text = "Thể loại";
-            this.lci_TL.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_TL.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_TG
             // 
             this.lci_TG.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_TG.AppearanceItemCaption.Options.UseFont = true;
             this.lci_TG.Control = this.txt_TG;
-            this.lci_TG.Location = new System.Drawing.Point(0, 112);
+            this.lci_TG.Location = new System.Drawing.Point(0, 128);
             this.lci_TG.Name = "lci_TG";
-            this.lci_TG.Size = new System.Drawing.Size(514, 28);
+            this.lci_TG.Size = new System.Drawing.Size(599, 32);
             this.lci_TG.Text = "Tác giả";
-            this.lci_TG.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_TG.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_ST
             // 
             this.lci_ST.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_ST.AppearanceItemCaption.Options.UseFont = true;
             this.lci_ST.Control = this.txt_ST;
-            this.lci_ST.Location = new System.Drawing.Point(319, 84);
+            this.lci_ST.Location = new System.Drawing.Point(372, 96);
             this.lci_ST.Name = "lci_ST";
-            this.lci_ST.Size = new System.Drawing.Size(195, 28);
+            this.lci_ST.Size = new System.Drawing.Size(227, 32);
             this.lci_ST.Text = "Số trang";
-            this.lci_ST.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_ST.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_XB
             // 
             this.lci_XB.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_XB.AppearanceItemCaption.Options.UseFont = true;
             this.lci_XB.Control = this.txt_XB;
-            this.lci_XB.Location = new System.Drawing.Point(319, 56);
+            this.lci_XB.Location = new System.Drawing.Point(372, 64);
             this.lci_XB.Name = "lci_XB";
-            this.lci_XB.Size = new System.Drawing.Size(195, 28);
+            this.lci_XB.Size = new System.Drawing.Size(227, 32);
             this.lci_XB.Text = "Năm XB";
-            this.lci_XB.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_XB.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_VT
             // 
             this.lci_VT.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_VT.AppearanceItemCaption.Options.UseFont = true;
             this.lci_VT.Control = this.txt_VT;
-            this.lci_VT.Location = new System.Drawing.Point(0, 84);
+            this.lci_VT.Location = new System.Drawing.Point(0, 96);
             this.lci_VT.Name = "lci_VT";
-            this.lci_VT.Size = new System.Drawing.Size(319, 28);
+            this.lci_VT.Size = new System.Drawing.Size(372, 32);
             this.lci_VT.Text = "Vị trí";
-            this.lci_VT.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_VT.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_SL
             // 
             this.lci_SL.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_SL.AppearanceItemCaption.Options.UseFont = true;
             this.lci_SL.Control = this.txt_SL;
-            this.lci_SL.Location = new System.Drawing.Point(319, 140);
+            this.lci_SL.Location = new System.Drawing.Point(372, 160);
             this.lci_SL.Name = "lci_SL";
-            this.lci_SL.Size = new System.Drawing.Size(195, 35);
+            this.lci_SL.Size = new System.Drawing.Size(227, 56);
             this.lci_SL.Text = "Số lượng sách";
-            this.lci_SL.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_SL.TextSize = new System.Drawing.Size(115, 22);
             // 
             // lci_NXB
             // 
             this.lci_NXB.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_NXB.AppearanceItemCaption.Options.UseFont = true;
             this.lci_NXB.Control = this.txt_NXB;
-            this.lci_NXB.Location = new System.Drawing.Point(0, 140);
+            this.lci_NXB.Location = new System.Drawing.Point(0, 160);
             this.lci_NXB.Name = "lci_NXB";
-            this.lci_NXB.Size = new System.Drawing.Size(319, 35);
+            this.lci_NXB.Size = new System.Drawing.Size(372, 56);
             this.lci_NXB.Text = "Nhà XB";
-            this.lci_NXB.TextSize = new System.Drawing.Size(90, 17);
+            this.lci_NXB.TextSize = new System.Drawing.Size(115, 22);
             // 
             // frm_TTTS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(543, 202);
+            this.ClientSize = new System.Drawing.Size(634, 249);
             this.Controls.Add(this.layoutControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_TTTS";
             this.Text = "frm_TTTS";
             this.Load += new System.EventHandler(this.frm_TTTS_Load);

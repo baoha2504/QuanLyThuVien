@@ -1,17 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using QLThuVien.BUSLayer;
-using QLThuVien.ValueObject;
-using System.Data.SqlClient;
+﻿using QLThuVien.BUSLayer;
 using QLThuVien.DataAccessLayer;
+using QLThuVien.ValueObject;
+using System;
+using System.Data;
+using System.Windows.Forms;
 
 namespace QLThuVien.GUI
 {
@@ -86,7 +78,8 @@ namespace QLThuVien.GUI
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
             string std = string.Format("TenDG like '%{0}%'", txt_search.Text);
-            dt.DefaultView.RowFilter = std;       
+            dt.DefaultView.RowFilter = std;
+
         }
 
         private void btn_insert_Click(object sender, EventArgs e)
@@ -143,6 +136,8 @@ namespace QLThuVien.GUI
                 if (MessageBox.Show("Bạn muốn lưu thay đổi không?", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     gridControl1.DataSource = BUS.Update_DG(dg2);
+                    string query = "update DocGia set HoatDong = 1 where MaDG = N'" + txt_MaDG.Text + "'";
+                    DataProvider.ExecuteQuery(query);
                     MessageBox.Show("Đã lưu thành công");
                     gridControl1.DataSource = BUS.Select_DG();
                     LoadData();

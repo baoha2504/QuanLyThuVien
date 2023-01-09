@@ -1,18 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using QLThuVien.BUSLayer;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using QLThuVien.BUSLayer;
 using QLThuVien.DataAccessLayer;
-using QLThuVien.ValueObject;
-using System.Data.SqlClient;
-using System.Runtime.InteropServices;
 namespace QLThuVien.Form_Info
 {
     public partial class frm_TTTS : DevExpress.XtraEditors.XtraForm
@@ -25,10 +14,31 @@ namespace QLThuVien.Form_Info
 
         private void frm_TTTS_Load(object sender, EventArgs e)
         {
-           char  MaTS1 = Convert.ToChar(MaTS);
-            DataTable dt = BUS.Get_TS(MaTS1);
-            txt_MaTS.Text = MaTS;
-          
+            if (MaTS != string.Empty)
+            {
+                //char MaTS1 = Convert.ToChar(MaTS);
+                string query = "select TuaSach.MaTS, TenTS, TheLoai, MaViTri, TenTG, TenNXB, NamXB, SoTrang, SoLuong " +
+                    "from TuaSach, TacGia, Viet, NXB, KeSach, CuonSach " +
+                    "where TuaSach.MaNXB = NXB.MaNXB " +
+                    "and TuaSach.MaTS = Viet.MaTS " +
+                    "and Viet.MaTG = TacGia.MaTG " +
+                    "and KeSach.MaKe = TuaSach.MaKe " +
+                    "and CuonSach.MaTS = TuaSach.MaTS " +
+                    "and CuonSach.MaCS = N'"+ MaTS + "'";
+                DataTable dt = DataProvider.GetData(query);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    txt_MaTS.Text = dr["MaTS"].ToString();
+                    txt_TenTS.Text = dr["TenTS"].ToString();
+                    txt_TL.Text = dr["TheLoai"].ToString();
+                    txt_VT.Text = dr["MaViTri"].ToString();
+                    txt_TG.Text = dr["TenTG"].ToString();
+                    txt_NXB.Text = dr["TenNXB"].ToString();
+                    txt_XB.Text = dr["NamXB"].ToString();
+                    txt_ST.Text = dr["SoTrang"].ToString();
+                    txt_SL.Text = dr["SoLuong"].ToString();
+                }
+            }
         }
     }
 }

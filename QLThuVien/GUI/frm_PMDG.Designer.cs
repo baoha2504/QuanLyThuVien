@@ -79,7 +79,7 @@ namespace QLThuVien.GUI
             this.gridControlPM.MainView = this.gridView1;
             this.gridControlPM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlPM.Name = "gridControlPM";
-            this.gridControlPM.Size = new System.Drawing.Size(965, 358);
+            this.gridControlPM.Size = new System.Drawing.Size(958, 358);
             this.gridControlPM.TabIndex = 16;
             this.gridControlPM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -288,7 +288,7 @@ namespace QLThuVien.GUI
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(946, 42);
+            this.txt_search.Size = new System.Drawing.Size(939, 42);
             this.txt_search.TabIndex = 23;
             this.txt_search.Text = "Search";
             this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
@@ -302,7 +302,7 @@ namespace QLThuVien.GUI
             this.label1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(2, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 22);
+            this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 24;
             this.label1.Text = "Mã cuốn sách";
             // 
@@ -314,7 +314,7 @@ namespace QLThuVien.GUI
             this.label2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(2, 38);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 22);
+            this.label2.Size = new System.Drawing.Size(100, 20);
             this.label2.TabIndex = 25;
             this.label2.Text = "Ngày mượn";
             // 
@@ -326,7 +326,7 @@ namespace QLThuVien.GUI
             this.label3.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(2, 69);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 22);
+            this.label3.Size = new System.Drawing.Size(76, 20);
             this.label3.TabIndex = 26;
             this.label3.Text = "Ngày trả";
             // 
@@ -337,7 +337,7 @@ namespace QLThuVien.GUI
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(9, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 22);
+            this.label4.Size = new System.Drawing.Size(79, 20);
             this.label4.TabIndex = 27;
             this.label4.Text = "Tựa sách";
             // 
@@ -347,7 +347,7 @@ namespace QLThuVien.GUI
             this.label5.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(9, 38);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 22);
+            this.label5.Size = new System.Drawing.Size(72, 20);
             this.label5.TabIndex = 28;
             this.label5.Text = "Thủ thư";
             // 
@@ -357,7 +357,7 @@ namespace QLThuVien.GUI
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(9, 69);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(97, 22);
+            this.label6.Size = new System.Drawing.Size(91, 20);
             this.label6.TabIndex = 29;
             this.label6.Text = "Tình trạng";
             // 
@@ -397,7 +397,7 @@ namespace QLThuVien.GUI
             this.panel2.Controls.Add(this.txtTT);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtStatus);
-            this.panel2.Location = new System.Drawing.Point(545, 35);
+            this.panel2.Location = new System.Drawing.Point(538, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(471, 102);
             this.panel2.TabIndex = 31;
@@ -409,7 +409,7 @@ namespace QLThuVien.GUI
             this.panel3.Controls.Add(this.txt_search);
             this.panel3.Location = new System.Drawing.Point(51, 143);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(965, 51);
+            this.panel3.Size = new System.Drawing.Size(958, 51);
             this.panel3.TabIndex = 32;
             // 
             // frm_PMDG
@@ -423,7 +423,7 @@ namespace QLThuVien.GUI
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Name = "frm_PMDG";
-            this.Size = new System.Drawing.Size(1056, 594);
+            this.Size = new System.Drawing.Size(1049, 577);
             this.Load += new System.EventHandler(this.frm_PMDG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDocGia));
             this.mainContainer = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormContainer();
             this.accordionControl1 = new DevExpress.XtraBars.Navigation.AccordionControl();
             this.TrangChu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -99,12 +100,12 @@
             this.TrangChu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnTrangChu,
             this.btnThongBao});
-            this.TrangChu.Expanded = true;
             this.TrangChu.Name = "TrangChu";
             this.TrangChu.Text = "Trang chủ";
             // 
             // btnTrangChu
             // 
+            this.btnTrangChu.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnTrangChu.ImageOptions.SvgImage")));
             this.btnTrangChu.Name = "btnTrangChu";
             this.btnTrangChu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTrangChu.Text = "Trang chủ";
@@ -112,6 +113,7 @@
             // 
             // btnThongBao
             // 
+            this.btnThongBao.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThongBao.ImageOptions.SvgImage")));
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongBao.Text = "Thông báo";
@@ -122,12 +124,12 @@
             this.MuonTra.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnPhieuMuon,
             this.btnThongKe});
-            this.MuonTra.Expanded = true;
             this.MuonTra.Name = "MuonTra";
             this.MuonTra.Text = "Mượn trả";
             // 
             // btnPhieuMuon
             // 
+            this.btnPhieuMuon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuMuon.ImageOptions.Image")));
             this.btnPhieuMuon.Name = "btnPhieuMuon";
             this.btnPhieuMuon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnPhieuMuon.Text = "Phiếu mượn";
@@ -135,6 +137,7 @@
             // 
             // btnThongKe
             // 
+            this.btnThongKe.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnThongKe.ImageOptions.SvgImage")));
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongKe.Text = "Thống kê";
@@ -149,12 +152,12 @@
             this.btnNhaXuatBan,
             this.btnKeSach,
             this.btnViTri});
-            this.Sach.Expanded = true;
             this.Sach.Name = "Sach";
             this.Sach.Text = "Sách";
             // 
             // btnCuonSach
             // 
+            this.btnCuonSach.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnCuonSach.ImageOptions.SvgImage")));
             this.btnCuonSach.Name = "btnCuonSach";
             this.btnCuonSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnCuonSach.Text = "Cuốn sách";
@@ -162,6 +165,7 @@
             // 
             // btnTuaSach
             // 
+            this.btnTuaSach.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTuaSach.ImageOptions.Image")));
             this.btnTuaSach.Name = "btnTuaSach";
             this.btnTuaSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTuaSach.Text = "Tựa sách";
@@ -169,6 +173,7 @@
             // 
             // btnTacGia
             // 
+            this.btnTacGia.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTacGia.ImageOptions.Image")));
             this.btnTacGia.Name = "btnTacGia";
             this.btnTacGia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTacGia.Text = "Tác giả";
@@ -176,6 +181,7 @@
             // 
             // btnNhaXuatBan
             // 
+            this.btnNhaXuatBan.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnNhaXuatBan.ImageOptions.Image")));
             this.btnNhaXuatBan.Name = "btnNhaXuatBan";
             this.btnNhaXuatBan.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnNhaXuatBan.Text = "Nhà xuất bản";
@@ -183,6 +189,7 @@
             // 
             // btnKeSach
             // 
+            this.btnKeSach.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnKeSach.ImageOptions.Image")));
             this.btnKeSach.Name = "btnKeSach";
             this.btnKeSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnKeSach.Text = "Kệ sách";
@@ -190,6 +197,7 @@
             // 
             // btnViTri
             // 
+            this.btnViTri.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnViTri.ImageOptions.Image")));
             this.btnViTri.Name = "btnViTri";
             this.btnViTri.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnViTri.Text = "Vị trí thư viện";
@@ -199,12 +207,12 @@
             // 
             this.ThongTinTroGiup.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnQuyDinh});
-            this.ThongTinTroGiup.Expanded = true;
             this.ThongTinTroGiup.Name = "ThongTinTroGiup";
             this.ThongTinTroGiup.Text = "Thông tin trợ giúp";
             // 
             // btnQuyDinh
             // 
+            this.btnQuyDinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnQuyDinh.ImageOptions.Image")));
             this.btnQuyDinh.Name = "btnQuyDinh";
             this.btnQuyDinh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuyDinh.Text = "Quy định thư viện";
@@ -215,12 +223,12 @@
             this.TaiKhoan.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnDoiMatKhau,
             this.btnDangXuat});
-            this.TaiKhoan.Expanded = true;
             this.TaiKhoan.Name = "TaiKhoan";
             this.TaiKhoan.Text = "Tài khoản";
             // 
             // btnDoiMatKhau
             // 
+            this.btnDoiMatKhau.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnDoiMatKhau.ImageOptions.SvgImage")));
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
             this.btnDoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
@@ -228,6 +236,7 @@
             // 
             // btnDangXuat
             // 
+            this.btnDangXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDangXuat.ImageOptions.Image")));
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDangXuat.Text = "Đăng xuất";

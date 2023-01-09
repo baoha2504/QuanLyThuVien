@@ -73,8 +73,7 @@
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtPass.Location = new System.Drawing.Point(576, 264);
-            this.txtPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPass.Location = new System.Drawing.Point(460, 222);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
             this.txtPass.Size = new System.Drawing.Size(647, 35);
@@ -83,8 +82,7 @@
             // txtNewPass
             // 
             this.txtNewPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtNewPass.Location = new System.Drawing.Point(576, 352);
-            this.txtNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNewPass.Location = new System.Drawing.Point(460, 296);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.PasswordChar = '*';
             this.txtNewPass.Size = new System.Drawing.Size(647, 35);
@@ -93,8 +91,7 @@
             // txtReNewPass
             // 
             this.txtReNewPass.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.txtReNewPass.Location = new System.Drawing.Point(576, 449);
-            this.txtReNewPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtReNewPass.Location = new System.Drawing.Point(460, 378);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.PasswordChar = '*';
             this.txtReNewPass.Size = new System.Drawing.Size(647, 35);
@@ -103,8 +100,7 @@
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(1084, 556);
-            this.btnLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLuu.Location = new System.Drawing.Point(849, 470);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(139, 53);
             this.btnLuu.TabIndex = 6;
