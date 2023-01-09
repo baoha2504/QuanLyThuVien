@@ -78,7 +78,7 @@ namespace QLThuVien.GUI
 
         private void btn_delete_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Bạn có muốn xóa hay không", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            if (MessageBox.Show("Bạn có chắc muốn xóa hay không", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 BUS.Delete_CS(cs);
         }
     }
