@@ -90,31 +90,31 @@
             this.layoutControl1.Controls.Add(this.txt_DC);
             this.layoutControl1.Controls.Add(this.txt_TenDG);
             this.layoutControl1.Controls.Add(this.txt_MaDG);
-            this.layoutControl1.Location = new System.Drawing.Point(27, 18);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.layoutControl1.Location = new System.Drawing.Point(34, 22);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.layoutControlGroup1;
-            this.layoutControl1.Size = new System.Drawing.Size(989, 171);
+            this.layoutControl1.Size = new System.Drawing.Size(1272, 203);
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
             // txt_SDT
             // 
             this.txt_SDT.EditValue = "";
-            this.txt_SDT.Location = new System.Drawing.Point(596, 78);
-            this.txt_SDT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_SDT.Location = new System.Drawing.Point(759, 94);
+            this.txt_SDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SDT.Properties.Appearance.Options.UseFont = true;
-            this.txt_SDT.Size = new System.Drawing.Size(379, 28);
+            this.txt_SDT.Size = new System.Drawing.Size(495, 32);
             this.txt_SDT.StyleController = this.layoutControl1;
             this.txt_SDT.TabIndex = 9;
             // 
             // date_NS
             // 
             this.date_NS.EditValue = null;
-            this.date_NS.Location = new System.Drawing.Point(596, 46);
-            this.date_NS.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.date_NS.Location = new System.Drawing.Point(759, 56);
+            this.date_NS.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.date_NS.Name = "date_NS";
             this.date_NS.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date_NS.Properties.Appearance.Options.UseFont = true;
@@ -122,14 +122,14 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.date_NS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.date_NS.Size = new System.Drawing.Size(379, 28);
+            this.date_NS.Size = new System.Drawing.Size(495, 32);
             this.date_NS.StyleController = this.layoutControl1;
             this.date_NS.TabIndex = 8;
             // 
             // cmb_GT
             // 
-            this.cmb_GT.Location = new System.Drawing.Point(115, 46);
-            this.cmb_GT.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.cmb_GT.Location = new System.Drawing.Point(140, 56);
+            this.cmb_GT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.cmb_GT.Name = "cmb_GT";
             this.cmb_GT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmb_GT.Properties.Appearance.Options.UseFont = true;
@@ -138,41 +138,41 @@
             this.cmb_GT.Properties.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cmb_GT.Size = new System.Drawing.Size(376, 28);
+            this.cmb_GT.Size = new System.Drawing.Size(491, 32);
             this.cmb_GT.StyleController = this.layoutControl1;
             this.cmb_GT.TabIndex = 7;
             // 
             // txt_DC
             // 
-            this.txt_DC.Location = new System.Drawing.Point(115, 78);
-            this.txt_DC.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_DC.Location = new System.Drawing.Point(140, 94);
+            this.txt_DC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_DC.Name = "txt_DC";
             this.txt_DC.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DC.Properties.Appearance.Options.UseFont = true;
-            this.txt_DC.Size = new System.Drawing.Size(376, 28);
+            this.txt_DC.Size = new System.Drawing.Size(491, 32);
             this.txt_DC.StyleController = this.layoutControl1;
             this.txt_DC.TabIndex = 6;
             // 
             // txt_TenDG
             // 
-            this.txt_TenDG.Location = new System.Drawing.Point(596, 14);
-            this.txt_TenDG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_TenDG.Location = new System.Drawing.Point(759, 18);
+            this.txt_TenDG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_TenDG.Name = "txt_TenDG";
             this.txt_TenDG.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenDG.Properties.Appearance.Options.UseFont = true;
-            this.txt_TenDG.Size = new System.Drawing.Size(379, 28);
+            this.txt_TenDG.Size = new System.Drawing.Size(495, 32);
             this.txt_TenDG.StyleController = this.layoutControl1;
             this.txt_TenDG.TabIndex = 5;
             // 
             // txt_MaDG
             // 
             this.txt_MaDG.Enabled = false;
-            this.txt_MaDG.Location = new System.Drawing.Point(115, 14);
-            this.txt_MaDG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_MaDG.Location = new System.Drawing.Point(140, 18);
+            this.txt_MaDG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_MaDG.Name = "txt_MaDG";
             this.txt_MaDG.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaDG.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaDG.Size = new System.Drawing.Size(376, 28);
+            this.txt_MaDG.Size = new System.Drawing.Size(491, 32);
             this.txt_MaDG.StyleController = this.layoutControl1;
             this.txt_MaDG.TabIndex = 4;
             // 
@@ -188,7 +188,7 @@
             this.lci_NS,
             this.lci_SDT});
             this.layoutControlGroup1.Name = "layoutControlGroup1";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(989, 171);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(1272, 203);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // lci_MaDG
@@ -198,64 +198,64 @@
             this.lci_MaDG.Control = this.txt_MaDG;
             this.lci_MaDG.Location = new System.Drawing.Point(0, 0);
             this.lci_MaDG.Name = "lci_MaDG";
-            this.lci_MaDG.Size = new System.Drawing.Size(481, 32);
+            this.lci_MaDG.Size = new System.Drawing.Size(619, 38);
             this.lci_MaDG.Text = "Mã Độc giả";
-            this.lci_MaDG.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_MaDG.TextSize = new System.Drawing.Size(116, 25);
             // 
             // lci_GT
             // 
             this.lci_GT.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_GT.AppearanceItemCaption.Options.UseFont = true;
             this.lci_GT.Control = this.cmb_GT;
-            this.lci_GT.Location = new System.Drawing.Point(0, 32);
+            this.lci_GT.Location = new System.Drawing.Point(0, 38);
             this.lci_GT.Name = "lci_GT";
-            this.lci_GT.Size = new System.Drawing.Size(481, 32);
+            this.lci_GT.Size = new System.Drawing.Size(619, 38);
             this.lci_GT.Text = "Giới tính";
-            this.lci_GT.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_GT.TextSize = new System.Drawing.Size(116, 25);
             // 
             // lci_TebDG
             // 
             this.lci_TebDG.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_TebDG.AppearanceItemCaption.Options.UseFont = true;
             this.lci_TebDG.Control = this.txt_TenDG;
-            this.lci_TebDG.Location = new System.Drawing.Point(481, 0);
+            this.lci_TebDG.Location = new System.Drawing.Point(619, 0);
             this.lci_TebDG.Name = "lci_TebDG";
-            this.lci_TebDG.Size = new System.Drawing.Size(484, 32);
+            this.lci_TebDG.Size = new System.Drawing.Size(623, 38);
             this.lci_TebDG.Text = "Họ tên";
-            this.lci_TebDG.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_TebDG.TextSize = new System.Drawing.Size(116, 25);
             // 
             // lci_DC
             // 
             this.lci_DC.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_DC.AppearanceItemCaption.Options.UseFont = true;
             this.lci_DC.Control = this.txt_DC;
-            this.lci_DC.Location = new System.Drawing.Point(0, 64);
+            this.lci_DC.Location = new System.Drawing.Point(0, 76);
             this.lci_DC.Name = "lci_DC";
-            this.lci_DC.Size = new System.Drawing.Size(481, 83);
+            this.lci_DC.Size = new System.Drawing.Size(619, 97);
             this.lci_DC.Text = "Địa chỉ";
-            this.lci_DC.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_DC.TextSize = new System.Drawing.Size(116, 25);
             // 
             // lci_NS
             // 
             this.lci_NS.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_NS.AppearanceItemCaption.Options.UseFont = true;
             this.lci_NS.Control = this.date_NS;
-            this.lci_NS.Location = new System.Drawing.Point(481, 32);
+            this.lci_NS.Location = new System.Drawing.Point(619, 38);
             this.lci_NS.Name = "lci_NS";
-            this.lci_NS.Size = new System.Drawing.Size(484, 32);
+            this.lci_NS.Size = new System.Drawing.Size(623, 38);
             this.lci_NS.Text = "Ngày sinh";
-            this.lci_NS.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_NS.TextSize = new System.Drawing.Size(116, 25);
             // 
             // lci_SDT
             // 
             this.lci_SDT.AppearanceItemCaption.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lci_SDT.AppearanceItemCaption.Options.UseFont = true;
             this.lci_SDT.Control = this.txt_SDT;
-            this.lci_SDT.Location = new System.Drawing.Point(481, 64);
+            this.lci_SDT.Location = new System.Drawing.Point(619, 76);
             this.lci_SDT.Name = "lci_SDT";
-            this.lci_SDT.Size = new System.Drawing.Size(484, 83);
+            this.lci_SDT.Size = new System.Drawing.Size(623, 97);
             this.lci_SDT.Text = "Điện thoại";
-            this.lci_SDT.TextSize = new System.Drawing.Size(96, 22);
+            this.lci_SDT.TextSize = new System.Drawing.Size(116, 25);
             // 
             // panelControl1
             // 
@@ -269,10 +269,10 @@
             this.panelControl1.Controls.Add(this.btn_delete);
             this.panelControl1.Controls.Add(this.btn_update);
             this.panelControl1.Controls.Add(this.btn_insert);
-            this.panelControl1.Location = new System.Drawing.Point(40, 205);
-            this.panelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panelControl1.Location = new System.Drawing.Point(51, 234);
+            this.panelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelControl1.Name = "panelControl1";
-            this.panelControl1.Size = new System.Drawing.Size(962, 73);
+            this.panelControl1.Size = new System.Drawing.Size(1238, 86);
             this.panelControl1.TabIndex = 4;
             // 
             // btn_cancel
@@ -280,10 +280,10 @@
             this.btn_cancel.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cancel.Appearance.Options.UseFont = true;
             this.btn_cancel.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_cancel.ImageOptions.Image")));
-            this.btn_cancel.Location = new System.Drawing.Point(497, 15);
-            this.btn_cancel.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_cancel.Location = new System.Drawing.Point(639, 18);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(117, 43);
+            this.btn_cancel.Size = new System.Drawing.Size(150, 51);
             this.btn_cancel.TabIndex = 19;
             this.btn_cancel.Text = "CANCEL";
             this.btn_cancel.Click += new System.EventHandler(this.btn_cancel_Click);
@@ -294,11 +294,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_search.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_search.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.txt_search.Location = new System.Drawing.Point(621, 15);
-            this.txt_search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_search.Location = new System.Drawing.Point(800, 18);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(311, 42);
+            this.txt_search.Size = new System.Drawing.Size(398, 49);
             this.txt_search.TabIndex = 17;
             this.txt_search.Text = "Search";
             this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
@@ -309,10 +309,10 @@
             this.btn_save.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_save.Appearance.Options.UseFont = true;
             this.btn_save.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_save.ImageOptions.Image")));
-            this.btn_save.Location = new System.Drawing.Point(373, 15);
-            this.btn_save.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_save.Location = new System.Drawing.Point(480, 18);
+            this.btn_save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_save.Name = "btn_save";
-            this.btn_save.Size = new System.Drawing.Size(117, 43);
+            this.btn_save.Size = new System.Drawing.Size(150, 51);
             this.btn_save.TabIndex = 15;
             this.btn_save.Text = "SAVE";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
@@ -322,10 +322,10 @@
             this.btn_delete.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete.Appearance.Options.UseFont = true;
             this.btn_delete.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete.ImageOptions.Image")));
-            this.btn_delete.Location = new System.Drawing.Point(250, 15);
-            this.btn_delete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_delete.Location = new System.Drawing.Point(321, 18);
+            this.btn_delete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_delete.Name = "btn_delete";
-            this.btn_delete.Size = new System.Drawing.Size(117, 43);
+            this.btn_delete.Size = new System.Drawing.Size(150, 51);
             this.btn_delete.TabIndex = 14;
             this.btn_delete.Text = "DELETE";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click);
@@ -335,10 +335,10 @@
             this.btn_update.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_update.Appearance.Options.UseFont = true;
             this.btn_update.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_update.ImageOptions.Image")));
-            this.btn_update.Location = new System.Drawing.Point(126, 15);
-            this.btn_update.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_update.Location = new System.Drawing.Point(162, 18);
+            this.btn_update.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_update.Name = "btn_update";
-            this.btn_update.Size = new System.Drawing.Size(117, 43);
+            this.btn_update.Size = new System.Drawing.Size(150, 51);
             this.btn_update.TabIndex = 13;
             this.btn_update.Text = "UPDATE";
             this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
@@ -348,10 +348,10 @@
             this.btn_insert.Appearance.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_insert.Appearance.Options.UseFont = true;
             this.btn_insert.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_insert.ImageOptions.Image")));
-            this.btn_insert.Location = new System.Drawing.Point(2, 15);
-            this.btn_insert.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btn_insert.Location = new System.Drawing.Point(3, 18);
+            this.btn_insert.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_insert.Name = "btn_insert";
-            this.btn_insert.Size = new System.Drawing.Size(117, 43);
+            this.btn_insert.Size = new System.Drawing.Size(150, 51);
             this.btn_insert.TabIndex = 12;
             this.btn_insert.Text = "INSERT";
             this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
@@ -361,12 +361,12 @@
             this.gridControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControl1.Location = new System.Drawing.Point(40, 288);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl1.Location = new System.Drawing.Point(51, 329);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(962, 246);
+            this.gridControl1.Size = new System.Drawing.Size(1238, 292);
             this.gridControl1.TabIndex = 5;
             this.gridControl1.UseEmbeddedNavigator = true;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -381,7 +381,7 @@
             this.gridColumn4,
             this.gridColumn6,
             this.gridColumn5});
-            this.gridView1.DetailHeight = 431;
+            this.gridView1.DetailHeight = 512;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
@@ -397,11 +397,11 @@
             this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.Caption = "Mã Độc giả";
             this.gridColumn1.FieldName = "MaDG";
-            this.gridColumn1.MinWidth = 23;
+            this.gridColumn1.MinWidth = 30;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 0;
-            this.gridColumn1.Width = 105;
+            this.gridColumn1.Width = 135;
             // 
             // gridColumn2
             // 
@@ -411,11 +411,11 @@
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.Caption = "Họ tên";
             this.gridColumn2.FieldName = "TenDG";
-            this.gridColumn2.MinWidth = 23;
+            this.gridColumn2.MinWidth = 30;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 1;
-            this.gridColumn2.Width = 202;
+            this.gridColumn2.Width = 259;
             // 
             // gridColumn3
             // 
@@ -425,11 +425,11 @@
             this.gridColumn3.AppearanceHeader.Options.UseFont = true;
             this.gridColumn3.Caption = "Ngày sinh";
             this.gridColumn3.FieldName = "NgaySinh";
-            this.gridColumn3.MinWidth = 23;
+            this.gridColumn3.MinWidth = 30;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
-            this.gridColumn3.Width = 128;
+            this.gridColumn3.Width = 165;
             // 
             // gridColumn4
             // 
@@ -439,11 +439,11 @@
             this.gridColumn4.AppearanceHeader.Options.UseFont = true;
             this.gridColumn4.Caption = "Giới tính";
             this.gridColumn4.FieldName = "GioiTinh";
-            this.gridColumn4.MinWidth = 23;
+            this.gridColumn4.MinWidth = 30;
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
             this.gridColumn4.VisibleIndex = 3;
-            this.gridColumn4.Width = 93;
+            this.gridColumn4.Width = 120;
             // 
             // gridColumn6
             // 
@@ -453,11 +453,11 @@
             this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.Caption = "Điện thoại";
             this.gridColumn6.FieldName = "SDT";
-            this.gridColumn6.MinWidth = 23;
+            this.gridColumn6.MinWidth = 30;
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
             this.gridColumn6.VisibleIndex = 5;
-            this.gridColumn6.Width = 87;
+            this.gridColumn6.Width = 112;
             // 
             // gridColumn5
             // 
@@ -467,24 +467,24 @@
             this.gridColumn5.AppearanceHeader.Options.UseFont = true;
             this.gridColumn5.Caption = "Địa chỉ";
             this.gridColumn5.FieldName = "DiaChi";
-            this.gridColumn5.MinWidth = 23;
+            this.gridColumn5.MinWidth = 30;
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
             this.gridColumn5.VisibleIndex = 4;
-            this.gridColumn5.Width = 181;
+            this.gridColumn5.Width = 232;
             // 
             // frm_DG
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.panelControl1);
             this.Controls.Add(this.layoutControl1);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frm_DG";
-            this.Size = new System.Drawing.Size(1050, 554);
+            this.Size = new System.Drawing.Size(1350, 658);
             this.Load += new System.EventHandler(this.frm_DG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
