@@ -46,7 +46,7 @@ namespace QLThuVien.GUI
             this.gridControlNhapSachTT.Location = new System.Drawing.Point(184, 47);
             this.gridControlNhapSachTT.MainView = this.gridView1;
             this.gridControlNhapSachTT.Name = "gridControlNhapSachTT";
-            this.gridControlNhapSachTT.Size = new System.Drawing.Size(1129, 419);
+            this.gridControlNhapSachTT.Size = new System.Drawing.Size(1129, 432);
             this.gridControlNhapSachTT.TabIndex = 0;
             this.gridControlNhapSachTT.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -100,7 +100,7 @@ namespace QLThuVien.GUI
             this.Controls.Add(this.gridControlNhapSachCur);
             this.Controls.Add(this.gridControlNhapSachTT);
             this.Name = "frm_TKNS_TT";
-            this.Size = new System.Drawing.Size(1554, 934);
+            this.Size = new System.Drawing.Size(1554, 897);
             this.Load += new System.EventHandler(this.frm_TKNS_TT_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlNhapSachTT)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

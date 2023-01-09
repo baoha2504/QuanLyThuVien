@@ -18,6 +18,7 @@ namespace QLThuVien.GUI
 {
     public partial class frm_PMDG : DevExpress.XtraEditors.XtraUserControl
     {
+
         SqlConnection sqlCon = new SqlConnection(DataProvider.connectionStr);
         public frm_PMDG()
         {
@@ -46,25 +47,24 @@ namespace QLThuVien.GUI
 
         private void txt_search_TextChanged(object sender, EventArgs e)
         {
-            if(txt_search.Text != string.Empty)
+            if (txt_search.Text != string.Empty)
             {
                 string query = "select PhieuMuon.MaPM ,NgayMuon ,NgayTra,ChiTietMuon.MaCS,TenTS , TenTT,TinhTrang " +
                   " from PhieuMuon, DocGia, ThuThu, ChiTietMuon, TuaSach, CuonSach" +
                   " where PhieuMuon.MaDG= DocGia.MaDG and PhieuMuon.MaTT= ThuThu.MaTT " +
-                  "and PhieuMuon.MaPM= ChiTietMuon.MaPM and TenTS LIKE N'%"+ txt_search.Text+ "%'" +
+                  "and PhieuMuon.MaPM= ChiTietMuon.MaPM and TenTS LIKE N'%" + txt_search.Text + "%'" +
                   " and TuaSach.MaTS= CuonSach.MaTS and CuonSach.MaCS= ChiTietMuon.MaCS and PhieuMuon.MaDG = N'" + DangNhap.id.Trim() + "'";
                 gridControlPM.DataSource = DataProvider.GetData(query);
-            } else
+            }
+            else
             {
                 connect();
             }
         }
-
         private void txt_search_MouseClick(object sender, MouseEventArgs e)
         {
             txt_search.Text = "";
         }
-
         private void gridView1_Click(object sender, EventArgs e)
         {
             currenRowIndex = gridView1.FocusedRowHandle;

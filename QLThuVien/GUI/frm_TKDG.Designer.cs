@@ -237,11 +237,11 @@ namespace QLThuVien.GUI
             this.gridControlTKDG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControlTKDG.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.gridControlTKDG.Location = new System.Drawing.Point(41, 241);
+            this.gridControlTKDG.Location = new System.Drawing.Point(31, 241);
             this.gridControlTKDG.MainView = this.gridView1;
             this.gridControlTKDG.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlTKDG.Name = "gridControlTKDG";
-            this.gridControlTKDG.Size = new System.Drawing.Size(1005, 465);
+            this.gridControlTKDG.Size = new System.Drawing.Size(1013, 454);
             this.gridControlTKDG.TabIndex = 46;
             this.gridControlTKDG.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});

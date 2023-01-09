@@ -79,7 +79,7 @@ namespace QLThuVien.GUI
             this.gridControlPM.MainView = this.gridView1;
             this.gridControlPM.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControlPM.Name = "gridControlPM";
-            this.gridControlPM.Size = new System.Drawing.Size(958, 358);
+            this.gridControlPM.Size = new System.Drawing.Size(965, 358);
             this.gridControlPM.TabIndex = 16;
             this.gridControlPM.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -288,7 +288,7 @@ namespace QLThuVien.GUI
             this.txt_search.Margin = new System.Windows.Forms.Padding(4);
             this.txt_search.Multiline = true;
             this.txt_search.Name = "txt_search";
-            this.txt_search.Size = new System.Drawing.Size(939, 42);
+            this.txt_search.Size = new System.Drawing.Size(946, 42);
             this.txt_search.TabIndex = 23;
             this.txt_search.Text = "Search";
             this.txt_search.MouseClick += new System.Windows.Forms.MouseEventHandler(this.txt_search_MouseClick);
@@ -397,7 +397,7 @@ namespace QLThuVien.GUI
             this.panel2.Controls.Add(this.txtTT);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.txtStatus);
-            this.panel2.Location = new System.Drawing.Point(538, 35);
+            this.panel2.Location = new System.Drawing.Point(545, 35);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(471, 102);
             this.panel2.TabIndex = 31;
@@ -409,7 +409,7 @@ namespace QLThuVien.GUI
             this.panel3.Controls.Add(this.txt_search);
             this.panel3.Location = new System.Drawing.Point(51, 143);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(958, 51);
+            this.panel3.Size = new System.Drawing.Size(965, 51);
             this.panel3.TabIndex = 32;
             // 
             // frm_PMDG
@@ -423,7 +423,7 @@ namespace QLThuVien.GUI
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Name = "frm_PMDG";
-            this.Size = new System.Drawing.Size(1049, 577);
+            this.Size = new System.Drawing.Size(1056, 594);
             this.Load += new System.EventHandler(this.frm_PMDG_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControlPM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

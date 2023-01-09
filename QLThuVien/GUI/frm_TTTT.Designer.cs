@@ -93,7 +93,7 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.txt_NS.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.txt_NS.Size = new System.Drawing.Size(470, 28);
+            this.txt_NS.Size = new System.Drawing.Size(464, 28);
             this.txt_NS.StyleController = this.layoutControl1;
             this.txt_NS.TabIndex = 11;
             // 
@@ -104,7 +104,7 @@
             this.txt_SDT.Name = "txt_SDT";
             this.txt_SDT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_SDT.Properties.Appearance.Options.UseFont = true;
-            this.txt_SDT.Size = new System.Drawing.Size(470, 28);
+            this.txt_SDT.Size = new System.Drawing.Size(464, 28);
             this.txt_SDT.StyleController = this.layoutControl1;
             this.txt_SDT.TabIndex = 9;
             // 
@@ -115,7 +115,7 @@
             this.txt_DC.Name = "txt_DC";
             this.txt_DC.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_DC.Properties.Appearance.Options.UseFont = true;
-            this.txt_DC.Size = new System.Drawing.Size(470, 28);
+            this.txt_DC.Size = new System.Drawing.Size(464, 28);
             this.txt_DC.StyleController = this.layoutControl1;
             this.txt_DC.TabIndex = 8;
             // 
@@ -126,7 +126,7 @@
             this.txt_GT.Name = "txt_GT";
             this.txt_GT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_GT.Properties.Appearance.Options.UseFont = true;
-            this.txt_GT.Size = new System.Drawing.Size(470, 28);
+            this.txt_GT.Size = new System.Drawing.Size(464, 28);
             this.txt_GT.StyleController = this.layoutControl1;
             this.txt_GT.TabIndex = 7;
             // 
@@ -137,7 +137,7 @@
             this.txt_TenTT.Name = "txt_TenTT";
             this.txt_TenTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_TenTT.Properties.Appearance.Options.UseFont = true;
-            this.txt_TenTT.Size = new System.Drawing.Size(470, 28);
+            this.txt_TenTT.Size = new System.Drawing.Size(464, 28);
             this.txt_TenTT.StyleController = this.layoutControl1;
             this.txt_TenTT.TabIndex = 5;
             // 
@@ -148,7 +148,7 @@
             this.txt_MaTT.Name = "txt_MaTT";
             this.txt_MaTT.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_MaTT.Properties.Appearance.Options.UseFont = true;
-            this.txt_MaTT.Size = new System.Drawing.Size(470, 28);
+            this.txt_MaTT.Size = new System.Drawing.Size(464, 28);
             this.txt_MaTT.StyleController = this.layoutControl1;
             this.txt_MaTT.TabIndex = 4;
             // 
@@ -159,7 +159,7 @@
             this.txt_CV.Name = "txt_CV";
             this.txt_CV.Properties.Appearance.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CV.Properties.Appearance.Options.UseFont = true;
-            this.txt_CV.Size = new System.Drawing.Size(470, 28);
+            this.txt_CV.Size = new System.Drawing.Size(464, 28);
             this.txt_CV.StyleController = this.layoutControl1;
             this.txt_CV.TabIndex = 10;
             // 
@@ -176,7 +176,7 @@
             this.lbl_NS,
             this.lbl_CV1});
             this.layoutControlGroup1.Name = "Root";
-            this.layoutControlGroup1.Size = new System.Drawing.Size(589, 295);
+            this.layoutControlGroup1.Size = new System.Drawing.Size(583, 295);
             this.layoutControlGroup1.TextVisible = false;
             // 
             // lbl_MaTT
@@ -262,7 +262,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(594, 287);
+            this.ClientSize = new System.Drawing.Size(586, 306);
             this.Controls.Add(this.layoutControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frm_TTTT";
