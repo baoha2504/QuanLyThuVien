@@ -38,6 +38,7 @@
             this.btnMuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTraSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.QuanLySach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnCuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTuaSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTacGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNhaXuatBan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -46,9 +47,12 @@
             this.QuanLyNhapSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNhapSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNhaCC = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.QuanLyTaiKhoan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnThuThu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnDocGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.ThongKe = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnTKTuaSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnTKMuonTra = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnTKNhapSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.XuLyViPham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnDSViPham = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnXuPhat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -59,16 +63,12 @@
             this.btnDangXuat = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.lblTieuDetest = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem2 = new DevExpress.XtraBars.BarStaticItem();
+            this.lblTime = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem3 = new DevExpress.XtraBars.BarStaticItem();
-            this.barStaticItem4 = new DevExpress.XtraBars.BarStaticItem();
+            this.lblName = new DevExpress.XtraBars.BarStaticItem();
             this.barStaticItem5 = new DevExpress.XtraBars.BarStaticItem();
             this.lblTieuDe = new DevExpress.XtraBars.BarStaticItem();
             this.fluentFormDefaultManager1 = new DevExpress.XtraBars.FluentDesignSystem.FluentFormDefaultManager(this.components);
-            this.QuanLyTaiKhoan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnThuThu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnDocGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnCuonSach = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentFormDefaultManager1)).BeginInit();
@@ -77,13 +77,21 @@
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(368, 44);
+            this.mainContainer.Location = new System.Drawing.Point(368, 48);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(866, 633);
+            this.mainContainer.Size = new System.Drawing.Size(858, 658);
             this.mainContainer.TabIndex = 0;
             // 
             // accordionControl1
             // 
+            this.accordionControl1.Appearance.Group.Hovered.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Group.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Group.Normal.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Group.Normal.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Hovered.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Item.Hovered.Options.UseFont = true;
+            this.accordionControl1.Appearance.Item.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControl1.Appearance.Item.Normal.Options.UseFont = true;
             this.accordionControl1.Dock = System.Windows.Forms.DockStyle.Left;
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.TrangChu,
@@ -95,10 +103,10 @@
             this.XuLyViPham,
             this.ThongTinTroGiup,
             this.TaiKhoan});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 44);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 48);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(368, 633);
+            this.accordionControl1.Size = new System.Drawing.Size(368, 658);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -123,6 +131,7 @@
             this.btnThongBao.Name = "btnThongBao";
             this.btnThongBao.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnThongBao.Text = "Thông báo";
+            this.btnThongBao.Click += new System.EventHandler(this.btnThongBao_Click);
             // 
             // QuanLyMuonTra
             // 
@@ -145,6 +154,7 @@
             this.btnTraSach.Name = "btnTraSach";
             this.btnTraSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnTraSach.Text = "Trả sách";
+            this.btnTraSach.Click += new System.EventHandler(this.btnTraSach_Click);
             // 
             // QuanLySach
             // 
@@ -158,6 +168,13 @@
             this.QuanLySach.Expanded = true;
             this.QuanLySach.Name = "QuanLySach";
             this.QuanLySach.Text = "Quản lý sách";
+            // 
+            // btnCuonSach
+            // 
+            this.btnCuonSach.Name = "btnCuonSach";
+            this.btnCuonSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnCuonSach.Text = "Cuốn sách";
+            this.btnCuonSach.Click += new System.EventHandler(this.btnCuonSach_Click);
             // 
             // btnTuaSach
             // 
@@ -192,6 +209,7 @@
             this.btnViTriKe.Name = "btnViTriKe";
             this.btnViTriKe.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnViTriKe.Text = "Vị trí kệ";
+            this.btnViTriKe.Click += new System.EventHandler(this.btnViTriKe_Click);
             // 
             // QuanLyNhapSach
             // 
@@ -216,11 +234,34 @@
             this.btnNhaCC.Text = "Nhà cung cấp";
             this.btnNhaCC.Click += new System.EventHandler(this.btnNhaCC_Click);
             // 
+            // QuanLyTaiKhoan
+            // 
+            this.QuanLyTaiKhoan.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.btnThuThu,
+            this.btnDocGia});
+            this.QuanLyTaiKhoan.Expanded = true;
+            this.QuanLyTaiKhoan.Name = "QuanLyTaiKhoan";
+            this.QuanLyTaiKhoan.Text = "Quản lý tài khoản";
+            // 
+            // btnThuThu
+            // 
+            this.btnThuThu.Name = "btnThuThu";
+            this.btnThuThu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnThuThu.Text = "Thủ thư";
+            this.btnThuThu.Click += new System.EventHandler(this.btnThuThu_Click);
+            // 
+            // btnDocGia
+            // 
+            this.btnDocGia.Name = "btnDocGia";
+            this.btnDocGia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnDocGia.Text = "Độc giả";
+            this.btnDocGia.Click += new System.EventHandler(this.btnDocGia_Click);
+            // 
             // ThongKe
             // 
             this.ThongKe.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnTKTuaSach,
-            this.btnTKMuonTra});
+            this.btnTKNhapSach});
             this.ThongKe.Expanded = true;
             this.ThongKe.Name = "ThongKe";
             this.ThongKe.Text = "Thống kê";
@@ -229,14 +270,15 @@
             // 
             this.btnTKTuaSach.Name = "btnTKTuaSach";
             this.btnTKTuaSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTKTuaSach.Text = "Tựa sách";
+            this.btnTKTuaSach.Text = "Mượn trả";
             this.btnTKTuaSach.Click += new System.EventHandler(this.btnTKTuaSach_Click);
             // 
-            // btnTKMuonTra
+            // btnTKNhapSach
             // 
-            this.btnTKMuonTra.Name = "btnTKMuonTra";
-            this.btnTKMuonTra.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnTKMuonTra.Text = "Mượn trả";
+            this.btnTKNhapSach.Name = "btnTKNhapSach";
+            this.btnTKNhapSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnTKNhapSach.Text = "Nhập sách";
+            this.btnTKNhapSach.Click += new System.EventHandler(this.btnTKNhapSach_Click);
             // 
             // XuLyViPham
             // 
@@ -252,12 +294,14 @@
             this.btnDSViPham.Name = "btnDSViPham";
             this.btnDSViPham.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDSViPham.Text = "Danh sách vi phạm";
+            this.btnDSViPham.Click += new System.EventHandler(this.btnDSViPham_Click);
             // 
             // btnXuPhat
             // 
             this.btnXuPhat.Name = "btnXuPhat";
             this.btnXuPhat.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnXuPhat.Text = "Xử phạt";
+            this.btnXuPhat.Click += new System.EventHandler(this.btnXuPhat_Click);
             // 
             // ThongTinTroGiup
             // 
@@ -272,6 +316,7 @@
             this.btnQuyDinh.Name = "btnQuyDinh";
             this.btnQuyDinh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnQuyDinh.Text = "Quy định thư viện";
+            this.btnQuyDinh.Click += new System.EventHandler(this.btnQuyDinh_Click);
             // 
             // TaiKhoan
             // 
@@ -287,6 +332,7 @@
             this.btnDoiMatKhau.Name = "btnDoiMatKhau";
             this.btnDoiMatKhau.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnDoiMatKhau.Text = "Đổi mật khẩu";
+            this.btnDoiMatKhau.Click += new System.EventHandler(this.btnDoiMatKhau_Click);
             // 
             // btnDangXuat
             // 
@@ -300,21 +346,21 @@
             this.fluentDesignFormControl1.FluentDesignForm = this;
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lblTieuDetest,
-            this.barStaticItem2,
+            this.lblTime,
             this.barStaticItem3,
-            this.barStaticItem4,
+            this.lblName,
             this.barStaticItem5,
             this.lblTieuDe});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
             this.fluentDesignFormControl1.Manager = this.fluentFormDefaultManager1;
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1234, 44);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1226, 48);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTieuDetest);
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem2);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTime);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem3);
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem4);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblName);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.barStaticItem5);
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTieuDe);
             // 
@@ -323,16 +369,16 @@
             this.lblTieuDetest.Id = 0;
             this.lblTieuDetest.Name = "lblTieuDetest";
             // 
-            // barStaticItem2
+            // lblTime
             // 
-            this.barStaticItem2.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem2.Caption = "barStaticItem2";
-            this.barStaticItem2.Id = 1;
-            this.barStaticItem2.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.barStaticItem2.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
-            this.barStaticItem2.ItemAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem2.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.barStaticItem2.Name = "barStaticItem2";
+            this.lblTime.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblTime.Caption = "time";
+            this.lblTime.Id = 1;
+            this.lblTime.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.lblTime.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
+            this.lblTime.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblTime.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.lblTime.Name = "lblTime";
             // 
             // barStaticItem3
             // 
@@ -345,18 +391,18 @@
             this.barStaticItem3.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.barStaticItem3.Name = "barStaticItem3";
             // 
-            // barStaticItem4
+            // lblName
             // 
-            this.barStaticItem4.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
-            this.barStaticItem4.Caption = "barStaticItem4";
-            this.barStaticItem4.Id = 3;
-            this.barStaticItem4.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barStaticItem4.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
-            this.barStaticItem4.ItemAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem4.ItemAppearance.Normal.Options.UseForeColor = true;
-            this.barStaticItem4.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.barStaticItem4.ItemInMenuAppearance.Normal.Options.UseFont = true;
-            this.barStaticItem4.Name = "barStaticItem4";
+            this.lblName.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.lblName.Caption = "name";
+            this.lblName.Id = 3;
+            this.lblName.ItemAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ItemAppearance.Normal.ForeColor = System.Drawing.Color.Red;
+            this.lblName.ItemAppearance.Normal.Options.UseFont = true;
+            this.lblName.ItemAppearance.Normal.Options.UseForeColor = true;
+            this.lblName.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Times New Roman", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.lblName.Name = "lblName";
             // 
             // barStaticItem5
             // 
@@ -383,48 +429,18 @@
             this.fluentFormDefaultManager1.Form = this;
             this.fluentFormDefaultManager1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lblTieuDetest,
-            this.barStaticItem2,
+            this.lblTime,
             this.barStaticItem3,
-            this.barStaticItem4,
+            this.lblName,
             this.barStaticItem5,
             this.lblTieuDe});
             this.fluentFormDefaultManager1.MaxItemId = 6;
-            // 
-            // QuanLyTaiKhoan
-            // 
-            this.QuanLyTaiKhoan.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnThuThu,
-            this.btnDocGia});
-            this.QuanLyTaiKhoan.Expanded = true;
-            this.QuanLyTaiKhoan.Name = "QuanLyTaiKhoan";
-            this.QuanLyTaiKhoan.Text = "Quản lý tài khoản";
-            // 
-            // btnThuThu
-            // 
-            this.btnThuThu.Name = "btnThuThu";
-            this.btnThuThu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnThuThu.Text = "Thủ thư";
-            this.btnThuThu.Click += new System.EventHandler(this.btnThuThu_Click);
-            // 
-            // btnDocGia
-            // 
-            this.btnDocGia.Name = "btnDocGia";
-            this.btnDocGia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnDocGia.Text = "Độc giả";
-            this.btnDocGia.Click += new System.EventHandler(this.btnDocGia_Click);
-            // 
-            // btnCuonSach
-            // 
-            this.btnCuonSach.Name = "btnCuonSach";
-            this.btnCuonSach.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnCuonSach.Text = "Cuốn sách";
-            this.btnCuonSach.Click += new System.EventHandler(this.btnCuonSach_Click);
             // 
             // frmThuThu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1234, 677);
+            this.ClientSize = new System.Drawing.Size(1226, 706);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);
@@ -464,7 +480,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNhaCC;
         private DevExpress.XtraBars.Navigation.AccordionControlElement ThongKe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKTuaSach;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKMuonTra;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnTKNhapSach;
         private DevExpress.XtraBars.Navigation.AccordionControlElement XuLyViPham;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDSViPham;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnXuPhat;
@@ -474,9 +490,9 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDoiMatKhau;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnDangXuat;
         private DevExpress.XtraBars.BarStaticItem lblTieuDetest;
-        private DevExpress.XtraBars.BarStaticItem barStaticItem2;
+        private DevExpress.XtraBars.BarStaticItem lblTime;
         private DevExpress.XtraBars.BarStaticItem barStaticItem3;
-        private DevExpress.XtraBars.BarStaticItem barStaticItem4;
+        private DevExpress.XtraBars.BarStaticItem lblName;
         private DevExpress.XtraBars.BarStaticItem barStaticItem5;
         private DevExpress.XtraBars.BarStaticItem lblTieuDe;
         private DevExpress.XtraBars.Navigation.AccordionControlElement QuanLyTaiKhoan;

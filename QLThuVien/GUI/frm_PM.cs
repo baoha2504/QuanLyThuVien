@@ -1,20 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
-using QLThuVien.BUSLayer;
+﻿using QLThuVien.BUSLayer;
 using QLThuVien.DataAccessLayer;
 using QLThuVien.ValueObject;
-using System.Data.SqlClient;
-using QLThuVien.Form_Info;
+using System;
+using System.Data;
+using System.Windows.Forms;
 
-    namespace QLThuVien.GUI
+namespace QLThuVien.GUI
 {
     public partial class frm_PM : DevExpress.XtraEditors.XtraUserControl
     {
@@ -22,6 +13,8 @@ using QLThuVien.Form_Info;
         private int currenRowIndex;
         private readonly PhieuMuon pm;
         bool insert = false; bool update = false;
+        string query = "";
+
         public frm_PM()
         {
             InitializeComponent();
@@ -82,13 +75,13 @@ using QLThuVien.Form_Info;
         private void btn_delete_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Bạn có muốn xóa hay không", "DELETE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
-            {               
-                    pm.MaPM = txt_MaPM.Text;
-                    gridControl1.DataSource = BUS.Delete_PM(pm);
-                    MessageBox.Show("Đã xóa thành công");
-                    gridControl1.DataSource = BUS.Select_PM();
-                    LoadData();
-                
+            {
+                pm.MaPM = txt_MaPM.Text;
+                gridControl1.DataSource = BUS.Delete_PM(pm);
+                MessageBox.Show("Đã xóa thành công");
+                gridControl1.DataSource = BUS.Select_PM();
+                LoadData();
+
             }
         }
 
@@ -117,8 +110,8 @@ using QLThuVien.Form_Info;
         {
             PhieuMuon pm2 = new PhieuMuon();
             pm2.MaPM = txt_MaPM.Text;
-            pm2.NgayMuon= txt_NM.DateTime;
-            pm2.NgayTra =  txt_NT.DateTime;
+            pm2.NgayMuon = txt_NM.DateTime;
+            pm2.NgayTra = txt_NT.DateTime;
             pm2.MaDG = cmb_TenDG.SelectedValue.ToString();
             pm2.MaTT = cmb_TenTT.SelectedValue.ToString();
             ChiTietMuon ctm = new ChiTietMuon();
@@ -128,7 +121,7 @@ using QLThuVien.Form_Info;
 
             if (insert)
             {
-                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mơi không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+                if (MessageBox.Show("Bạn muốn lưu dữ liệu được thêm mới không???", "SAVE", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
                 {
                     DataTable test = new DataTable(); //  kiểm tra mã đã  có trong bảng chưa???
                     string sql = "select *from PhieuMuon where MaPM= '" + txt_MaPM.Text + "'";
@@ -140,6 +133,8 @@ using QLThuVien.Form_Info;
                         MessageBox.Show("Đã thêm chi tiết mượn vào  " + txt_MaPM.Text, "Thông Báo !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gridControl1.DataSource = BUS.Select_PM();
                         LoadData();
+                        query = "UPDATE TuaSach SET SoLuong = SoLuong - 1 WHERE TenTS = N'" + cmb_TenTS.Text + "'";
+                        DataProvider.ExecuteQuery(query);
                     }
                     else
                     {
@@ -149,6 +144,8 @@ using QLThuVien.Form_Info;
                         MessageBox.Show("Đã lưu thành công");
                         gridControl1.DataSource = BUS.Select_PM();
                         LoadData();
+                        query = "UPDATE TuaSach SET SoLuong = SoLuong - 1 WHERE TenTS = N'" + cmb_TenTS.Text + "'";
+                        DataProvider.ExecuteQuery(query);
                     }
                 }
             }

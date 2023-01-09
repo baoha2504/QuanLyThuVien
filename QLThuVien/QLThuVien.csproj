@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
+    <Reference Include="DevExpress.BonusSkins.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Charts.v21.2.Core, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.CodeRush.Common, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d" />
     <Reference Include="DevExpress.CodeRush.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=35c9f04b7764aa3d, processorArchitecture=MSIL" />
@@ -86,6 +87,9 @@
     <Reference Include="Extensibility, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualStudio.OLE.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
     <Reference Include="Microsoft.VisualStudio.Shell, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.VisualStudio.Shell.Interop, Version=7.1.40304.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
@@ -124,6 +128,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddTabControl\TabAdd.cs" />
     <Compile Include="BUSLayer\BUS.cs" />
     <Compile Include="DangNhap.cs">
       <SubType>Form</SubType>
@@ -131,6 +136,8 @@
     <Compile Include="DangNhap.Designer.cs">
       <DependentUpon>DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataAccessLayer\DATA.cs" />
+    <Compile Include="DataAccessLayer\DataProvider.cs" />
     <Compile Include="Form Info\frm_TTTS.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +156,12 @@
     <Compile Include="frm_CS.Designer.cs">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frmDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frmDocGia.Designer.cs">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frmThuThu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -161,11 +174,41 @@
     <Compile Include="GUI\frm_CS.Designer.cs">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_DG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DG.Designer.cs">
+      <DependentUpon>frm_DG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_DoiMK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DoiMK.Designer.cs">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_DSViPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_DSViPham.Designer.cs">
+      <DependentUpon>frm_DSViPham.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_GT.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_GT.Designer.cs">
       <DependentUpon>frm_GT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_KS.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_KS.Designer.cs">
+      <DependentUpon>frm_KS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_LSViPham.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_LSViPham.Designer.cs">
+      <DependentUpon>frm_LSViPham.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_NCC.cs">
       <SubType>UserControl</SubType>
@@ -173,11 +216,23 @@
     <Compile Include="GUI\frm_NCC.Designer.cs">
       <DependentUpon>frm_NCC.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_NXB.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_NXB.Designer.cs">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_PM.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_PM.Designer.cs">
       <DependentUpon>frm_PM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_PMDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_PMDG.Designer.cs">
+      <DependentUpon>frm_PMDG.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\frm_PN.cs">
       <SubType>UserControl</SubType>
@@ -185,17 +240,77 @@
     <Compile Include="GUI\frm_PN.Designer.cs">
       <DependentUpon>frm_PN.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_QuyDinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_QuyDinh.Designer.cs">
+      <DependentUpon>frm_QuyDinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TB_TT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TB_TT.Designer.cs">
+      <DependentUpon>frm_TB_TT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TG.Designer.cs">
+      <DependentUpon>frm_TG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TK.Designer.cs">
+      <DependentUpon>frm_TK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TKDG.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TKDG.Designer.cs">
+      <DependentUpon>frm_TKDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TKNS_TT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TKNS_TT.Designer.cs">
+      <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TraSach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TraSach.Designer.cs">
+      <DependentUpon>frm_TraSach.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TS.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="GUI\frm_TS.Designer.cs">
       <DependentUpon>frm_TS.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\frm_TT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TT.Designer.cs">
+      <DependentUpon>frm_TT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\frm_TTTT.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\frm_TTTT.Designer.cs">
       <DependentUpon>frm_TTTT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_TTDG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_TTDG.Designer.cs">
+      <DependentUpon>frm_TTDG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\frm_VTK.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="GUI\frm_VTK.Designer.cs">
+      <DependentUpon>frm_VTK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -233,29 +348,83 @@
     <EmbeddedResource Include="frm_CS.resx">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frmDocGia.resx">
+      <DependentUpon>frmDocGia.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frmThuThu.resx">
       <DependentUpon>frmThuThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_CS.resx">
       <DependentUpon>frm_CS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DG.resx">
+      <DependentUpon>frm_DG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DoiMK.resx">
+      <DependentUpon>frm_DoiMK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_DSViPham.resx">
+      <DependentUpon>frm_DSViPham.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_GT.resx">
       <DependentUpon>frm_GT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_KS.resx">
+      <DependentUpon>frm_KS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_LSViPham.resx">
+      <DependentUpon>frm_LSViPham.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_NCC.resx">
       <DependentUpon>frm_NCC.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_NXB.resx">
+      <DependentUpon>frm_NXB.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_PM.resx">
       <DependentUpon>frm_PM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_PMDG.resx">
+      <DependentUpon>frm_PMDG.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_PN.resx">
       <DependentUpon>frm_PN.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_QuyDinh.resx">
+      <DependentUpon>frm_QuyDinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TB_TT.resx">
+      <DependentUpon>frm_TB_TT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TG.resx">
+      <DependentUpon>frm_TG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TK.resx">
+      <DependentUpon>frm_TK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TKDG.resx">
+      <DependentUpon>frm_TKDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TKNS_TT.resx">
+      <DependentUpon>frm_TKNS_TT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TraSach.resx">
+      <DependentUpon>frm_TraSach.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TS.resx">
       <DependentUpon>frm_TS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TT.resx">
+      <DependentUpon>frm_TT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\frm_TTTT.resx">
       <DependentUpon>frm_TTTT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_TTDG.resx">
+      <DependentUpon>frm_TTDG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\frm_VTK.resx">
+      <DependentUpon>frm_VTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -268,6 +437,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -693,8 +863,7 @@
     <None Include="Resources\nền.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="AddTabControl\" />
-    <Folder Include="DataAccessLayer\" />
+    <Content Include="QuyDinh.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
