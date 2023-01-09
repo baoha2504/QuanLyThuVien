@@ -73,7 +73,7 @@
             this.txtPass.Location = new System.Drawing.Point(455, 222);
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '*';
-            this.txtPass.Size = new System.Drawing.Size(497, 30);
+            this.txtPass.Size = new System.Drawing.Size(510, 30);
             this.txtPass.TabIndex = 3;
             // 
             // txtNewPass
@@ -82,7 +82,7 @@
             this.txtNewPass.Location = new System.Drawing.Point(455, 296);
             this.txtNewPass.Name = "txtNewPass";
             this.txtNewPass.PasswordChar = '*';
-            this.txtNewPass.Size = new System.Drawing.Size(497, 30);
+            this.txtNewPass.Size = new System.Drawing.Size(510, 30);
             this.txtNewPass.TabIndex = 4;
             // 
             // txtReNewPass
@@ -91,13 +91,13 @@
             this.txtReNewPass.Location = new System.Drawing.Point(455, 378);
             this.txtReNewPass.Name = "txtReNewPass";
             this.txtReNewPass.PasswordChar = '*';
-            this.txtReNewPass.Size = new System.Drawing.Size(497, 30);
+            this.txtReNewPass.Size = new System.Drawing.Size(510, 30);
             this.txtReNewPass.TabIndex = 5;
             // 
             // btnLuu
             // 
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLuu.Location = new System.Drawing.Point(844, 470);
+            this.btnLuu.Location = new System.Drawing.Point(857, 465);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(108, 45);
             this.btnLuu.TabIndex = 6;
