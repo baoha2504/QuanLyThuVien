@@ -22,6 +22,7 @@ namespace QLThuVien.GUI
         private readonly PhieuNhap pn;
         bool insert = false;
         bool update = false;
+        string query = "";
 
         public frm_PN()
         {
@@ -153,15 +154,18 @@ namespace QLThuVien.GUI
                     if (i > 0)
                     {
                         BUS.Insert_CTN(ctn);
-                        MessageBox.Show("Đã thêm chi tiết mượn vào  " + txt_MaPN.Text, "Thông Báo !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        query = "update TuaSach set SoLuong = SoLuong + "+ ctn.SoLuong + " where MaTS = N'"+ ctn.MaTS + "'";
+                        DataProvider.ExecuteQuery(query);
+                        MessageBox.Show("Đã thêm chi tiết nhập vào  " + txt_MaPN.Text, "Thông Báo !!!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         gridControl1.DataSource = BUS.Select_PN();
                         LoadData();
                     }
                     else
                     {
-
                         BUS.Insert_PN(pn2);
                         BUS.Insert_CTN(ctn);
+                        query = "update TuaSach set SoLuong = SoLuong + " + ctn.SoLuong + " where MaTS = N'" + ctn.MaTS + "'";
+                        DataProvider.ExecuteQuery(query);
                         MessageBox.Show("Đã lưu thành công");
                         gridControl1.DataSource = BUS.Select_PN();
                         LoadData();
